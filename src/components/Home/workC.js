@@ -1,24 +1,25 @@
 import React, { Component } from "react"
-import mainBG from "../../images/main-bg.png"
+import workBG from "../../images/work-bg.png"
 import klogo from "../../images/logo-k4ws.png"
 import { FaBars } from "react-icons/fa"
 import { Link } from "gatsby"
 
-export default class main extends Component {
+
+export default class aboutC extends Component {
   constructor(props) {
     super(props)
     this.state = {
       navbarOpen: false,
-      css: "hero-full col-12",
+      css: "hero-min col-10",
     }
   }
 
   navbarHandler = () => {
     this.state.navbarOpen
-      ? this.setState({ navbarOpen: false, css: "hero-full col-12" })
+      ? this.setState({ navbarOpen: false, css: "hero-min col-10" })
       : this.setState({
           navbarOpen: true,
-          css: "hero-min col-10",
+          css: "hero-full col-12",
         })
   }
   render() {
@@ -26,7 +27,7 @@ export default class main extends Component {
       <div className="container-fluid">
         <div className="row">
           <div className={this.state.css}>
-            <div className="logo-k4ws">
+          <div className="logo-k4ws">
             <Link to="/">
               <img src={klogo} alt="Logo"/>
             </Link>
@@ -38,22 +39,21 @@ export default class main extends Component {
             </div>
             <div>
               <div className="hero-bg">
-                <img src={mainBG} alt="Man Background"/>
-             
-                <div className="main-text">
+                <img src={workBG} alt="Work Backgroud"/>
+
+
+                <div className="about-text">
+                  <ul>
+                    <li>
+                      <button></button>
+                    </li>
+                  </ul>
+                  
+
                 
-                  
-                <h1>شركة خطاب</h1>
-                              
-                  <p> شركة خطاب ويب للبرمجيات شركة سعودية<br/>  رسمية تخدم أكثر من 5000 عميل علي <br/> مستوي العالم نتواجد في اكثر من 15 دولة</p>
-                  
-                  
                 </div>
-               
               </div>
             </div>
-
-
           </div>
         </div>
       </div>

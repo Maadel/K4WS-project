@@ -1,5 +1,10 @@
 import React from "react"
-import { Link } from "gatsby"
+//import { Link } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink";
+
+
+
+
 
 
 import arrow1 from "../../images/arrow1.png"
@@ -10,6 +15,7 @@ import iconServ from "../../images/icon-serv.png"
 import iconWork from "../../images/icon-work.png"
 import iconWho from "../../images/icon-who.png"
 import iconCall from "../../images/icon-call.png"
+
 
 
 
@@ -29,43 +35,45 @@ export default function Navbar() {
         <div className="col-2"> </div>
         <ul className="btn-list">
           <li>
-            <Link to="/">
+            <AniLink fade to="/">
             <button className="btn-nav"> <img src={iconHome} alt=""/>الرئيسية</button>
-            </Link>
+            </AniLink>
           </li>
           <li>
             <div className="btn-arrow1"><img src={arrow1} alt=""/></div>
             
           </li>
           <li>
-            <Link to="/service">
+            <AniLink fade to="/service">
             <button className="btn-nav btn-margin"><img src={iconServ} alt=""/> خدماتـنا</button>
-            </Link>
+            </AniLink>
           </li>
           <li>
             <div className="btn-arrow2"><img src={arrow2} alt=""/></div>
             
           </li>
           <li>
+            <AniLink fade to="/work">
             <button className="btn-nav"><img src={iconWork} alt=""/> اعمالـنا</button>
+            </AniLink>
           </li>
           <li>
             <div className="btn-arrow3"><img src={arrow3} alt=""/></div>
             
           </li>
           <li>
-            <Link to="/about">
+            <AniLink fade to="/about">
             <button className="btn-nav btn-margin"><img src={iconWho} alt=""/> من نحن </button>
-            </Link>
+            </AniLink>
           </li>
           <li>
             <div className="btn-arrow4"><img src={arrow2} alt=""/></div>
             
           </li>
           <li>
-            <Link to="/contact">
+            <AniLink fade to="/contact">
             <button className="btn-nav mt-3"><img src={iconCall} alt=""/> اتصل بنا</button>
-            </Link>
+            </AniLink>
           </li>
         </ul>
         </div>

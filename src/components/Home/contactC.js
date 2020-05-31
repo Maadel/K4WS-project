@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import contactBG from "../../images/contact-bg.png"
 import klogo from "../../images/logo-k4ws.png"
-
+import { FaBars } from "react-icons/fa"
 import { Link } from "gatsby"
 
 export default class contactC extends Component {
@@ -33,7 +33,7 @@ export default class contactC extends Component {
             </div>
             <div className="toggle-btn">
               <button onClick={this.navbarHandler}>
-                <p>AA</p>
+              <FaBars />
               </button>
             </div>
             <div>
@@ -44,28 +44,28 @@ export default class contactC extends Component {
                   <h1>اتصل بنا</h1>
 
                   <form>
-                    <label for="name" htmlFor="name">الإسم</label>
+                    <label  htmlFor="name">الإسم</label>
                     <input
                       type="text"
                       id="name"
                       name="name"
                       placeholder=""
                     ></input>
-                    <label for="email" htmlFor="email">البريد الالكتروني</label>
+                    <label  htmlFor="email">البريد الالكتروني</label>
                     <input
                       type="email"
                       id="email"
                       name="email"
                       placeholder=""
                     ></input>
-                    <label for="subject" htmlFor="subject">موضوع الرسالة</label>
+                    <label  htmlFor="subject">موضوع الرسالة</label>
                     <input
                       type="text"
                       id="subject"
                       name="subject"
                       placeholder=""
                     ></input>
-                    <label for="massage" htmlFor="massage">نص الرسالة</label>
+                    <label  htmlFor="massage">نص الرسالة</label>
                     <textarea
                       id="massage"
                       name="massage"

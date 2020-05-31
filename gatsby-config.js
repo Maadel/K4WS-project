@@ -12,9 +12,13 @@ module.exports = {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
+      
+      
     },
+    `gatsby-plugin-layout`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-transition-link`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

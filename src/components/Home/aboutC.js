@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import aboutBG from "../../images/about-bg.png"
 import klogo from "../../images/logo-k4ws.png"
-
+import { FaBars } from "react-icons/fa"
 import { Link } from "gatsby"
 
 
@@ -34,7 +34,7 @@ export default class aboutC extends Component {
             </div>
             <div className="toggle-btn">
               <button onClick={this.navbarHandler}>
-                <p>AA</p>
+              <FaBars />
               </button>
             </div>
             <div>

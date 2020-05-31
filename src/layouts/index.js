@@ -3,13 +3,15 @@ import PropTypes from "prop-types";
 //import { useStaticQuery, graphql } from "gatsby";
 import "./bootstrap.min.css";
 import "./layout.css";
-import Navbar from "./Globals/Navbar";
+import Navbar from "../components/Globals/Navbar";
+import Transition from "../components/transition";
 
 
-const Layout = ({ children }) => 
+
+const Layout = ({ children , location }) => 
 <>
 <Navbar/>
-{children}
+<Transition location={location}>{children}</Transition>
 
 
 </>;

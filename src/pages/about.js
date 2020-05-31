@@ -1,16 +1,16 @@
 import React from "react"
 
 
-import Layout from "../components/layout"
+
 import SEO from "../components/seo"
 
 import AboutC from "../components/Home/aboutC"
 
 const AboutPage = ({ data }) => (
-  <Layout>
+  <>
     <SEO title="About Us" />
     <AboutC />
-  </Layout>
+  </>
 )
 
 

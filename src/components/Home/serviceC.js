@@ -5,7 +5,7 @@ import info4BG from "../../images/info4-bg.png"
 import info5BG from "../../images/info5-bg.png"
 import klogo from "../../images/logo-k4ws.png"
 import infoArrow from "../../images/info-arrow.png"
-
+import { FaBars, FaTimes } from "react-icons/fa"
 import { Link } from "gatsby"
 
 export default class serviceC extends Component {
@@ -83,7 +83,7 @@ export default class serviceC extends Component {
 
             <div className="toggle-btn">
               <button onClick={this.navbarHandler}>
-                <p>AA</p>
+              <FaBars />
               </button>
             </div>
 
@@ -149,7 +149,7 @@ export default class serviceC extends Component {
               <div className="row info-test">
                 <div className="service-close-btn">
                   <button onClick={this.infoCloseHandler}>
-                    x
+                  <FaTimes />
                   </button>
                 </div>
                 <div className="service-info-bg">
@@ -166,7 +166,7 @@ export default class serviceC extends Component {
               <div className="row info-test">
                 <div className="service-close-btn">
                   <button onClick={this.infoCloseHandler}>
-                    x
+                  <FaTimes />
                   </button>
                 </div>
                 <div className="service-info-bg">
@@ -201,7 +201,7 @@ export default class serviceC extends Component {
               <div className="row">
                 <div className="service-close-btn">
                   <button onClick={this.infoCloseHandler}>
-                    x
+                  <FaTimes />
                   </button>
                 </div>
                 <div className="service-info-bg">
@@ -231,7 +231,7 @@ export default class serviceC extends Component {
               <div className="row">
                 <div className="service-close-btn">
                   <button onClick={this.infoCloseHandler}>
-                    x
+                  <FaTimes />
                   </button>
                 </div>
                 <div className="service-info-bg">
@@ -265,7 +265,7 @@ export default class serviceC extends Component {
               <div className="row">
                 <div className="service-close-btn">
                   <button onClick={this.infoCloseHandler}>
-                    x
+                  <FaTimes />
                   </button>
                 </div>
                 <div className="service-info-bg">
@@ -310,7 +310,7 @@ export default class serviceC extends Component {
               <div className="row info-test">
                 <div className="service-close-btn">
                   <button onClick={this.infoCloseHandler}>
-                    x
+                  <FaTimes />
                   </button>
                 </div>
                 <div className="service-info-bg">

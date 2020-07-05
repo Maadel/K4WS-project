@@ -40,7 +40,7 @@ export default class main extends Component {
               <div className="hero-bg">
                 <img src={mainBG} alt="Man Background"/>
              
-                <div className="main-text">
+                <div className="main-text fadeinn">
                 
                   
                 <h1>شركة خطاب</h1>

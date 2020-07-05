@@ -25,11 +25,14 @@ html {
 body {
     background: var(--mainWhite);
     font-family: 'almarai';
+    
 
     color:rgb(61, 58, 58);
     
 }
-
+a:hover {
+    text-decoration: none;
+}
 
 h1,h2,h3,h4,h5,h6 {
     font-family: 'almarai';
@@ -192,11 +195,11 @@ h1,h2,h3,h4,h5,h6 {
 
 .btn-list {
     margin-top: 7vh;
-    margin-right: 2vh;
+    margin-right: 2vw;
     
     
 
-    z-index: 5;
+    z-index: 999;
     
 }
 .main-bg {
@@ -229,12 +232,8 @@ h1,h2,h3,h4,h5,h6 {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     justify-content: right;
-
-  
-    
-  
-    
-    
+    max-width: 80vw;
+   
     
 }
 .hero-full {
@@ -535,7 +534,7 @@ form input[type=submit] {
     display: inline-block;
     font-weight: bolder;
     color: rgb(61, 57, 57);
-    
+    z-index: 999;
 
   }
   .btn-nav:hover {
@@ -633,7 +632,7 @@ form input[type=submit] {
     width: calc(7em + 3vw);
     height: calc(7em + 3vw);
     margin-left:calc(4em + 6vw);
-    margin-right: calc(2em + 8vw);
+    margin-right: calc(2em + 6vw);
     font-size: 120%;
 
   }
@@ -665,7 +664,7 @@ form input[type=submit] {
     width: calc( 5em + 7vw);
     height: calc(5em + 7vw);
     margin-left:calc(5em + 12vw);
-    margin-right: calc(5em + 15vw);
+    margin-right: calc(5em + 13vw);
     font-size: 140%;
     
 
@@ -709,6 +708,7 @@ form input[type=submit] {
       width: 100%;
       height: 100%;
       position: absolute;
+      opacity: 0.65;
       z-index: 20;
       
   }
@@ -934,9 +934,364 @@ form input[type=submit] {
     
 }
 
+work-filter {
+    float: left;
+}
 
+
+.work-btn {
+    background-color: transparent;
+    
+    border: none;
+    margin-left: 4em;
+    
+    
+}
+
+
+
+.work-btn:focus{
+    outline: none;
+}
+.work-img {
+    transform: scale(0.75);
+    transition: ease 0.5s all;
+    margin-top: -3vh;
+    
+}
+.work-img:hover{
+    transform: scale(0.85);
+    opacity: 0.75;
+    transition: all 0.5s ease;
+
+}
+.work-img:active {
+    opacity: 0.95;
+    transform: scale(0.8);
+    transition: all 0.5s ease;
+    
+}
+
+
+.work-hero-min {
+    height: 100%;
+    font-size: 80%;
+    width: auto;
+    max-height: 80vh;
+    margin-top: 9vh;
+    margin-bottom: 10vh;
+    margin-right: 20vh;
+    min-height: 80vh;
+    overflow: hidden;
+    overflow-y: scroll;
+    position: relative;
+    box-shadow: 15px 20px 20px rgba(3, 3, 0.3, 0.29);
+    
+    transition:all 0.5s ease;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    justify-content: right;
+    
+    background-color: rgba(131, 130, 130, 0.13);
+    background: url("../images/work-bg.png");
+    max-width: 80vw;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(21, 192, 149, 0.568) rgb(230, 233, 230);
+   
+    
+}
+.work-hero-full {
+    font-size: 150%;
+  
+    max-height: 100vh;
+    margin-top: 0vh;
+    margin-bottom: 0vh;
+    margin-right: 0vh;
+    min-height: 100vh;
+    overflow: hidden;
+    overflow-y: scroll;
+    transition:all 0.5s ease;
+    background-color: rgba(71, 70, 70, 0.582);
+    background: url("../images/work-bg.png");
+ 
+    border-bottom-right-radius: 5%;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(21, 192, 149, 0.568) rgb(230, 233, 230);
+
+    
+
+}
+
+.filter-btn {
+    font-size: calc(0.8vw + 0.6em);
+    font-weight: bold;
+    color: #f8f1f1;
+    background-color: rgba(29, 209, 164, 0.849);
+    border: 2px double rgb(196, 196, 196) ;
+    border-radius: 10px;
+    margin-right: 1vw;
+    margin-left: 2vw;
+    margin-bottom: 1vh;
+    box-shadow:inset 2px 6px 9px gray;
+    
+}
+.filter-btn:hover {
+    background-color: rgba(17, 236, 189, 0.89);
+    color: white;
+}
+.filter-btn:active {
+    background-color: rgba(27, 175, 138, 0.925);
+    color: rgb(228, 226, 226);
+    transform: scale(0.9);
+    transition: ease 0.2s all;
+}
+.filter-btn:target{
+    color: red;
+    background-color: red;
+}
+
+.filter-btn:focus {
+    outline: none !important;
+    outline-style: none !important;
+}
+
+
+.work-toggle-btn {
+    left: 93%;
+    
+    margin-top: 5vh;
+    
+    position: absolute;
+
+ 
+    
+}
+.work-toggle-btn button {
+    font-size: calc(95% + 1vw);
+    color: rgba(29, 209, 164, 0.849);
+    position: relative;
+    margin-right: 20vh;
+    z-index: 99;
+    padding: 1px !important;
+    background-color: transparent;
+    border: none;
+}
+.work-toggle-btn button:hover {
+    color: rgba(17, 236, 189, 0.89);
+}
+.work-toggle-btn button:active {
+    font-size: calc(85% + 1vw);
+    margin-left: 2%;
+    margin-top: 2%;
+    color: rgba(27, 175, 138, 0.925);
+    transition: ease .1s all;
+
+}
+.work-toggle-btn button:focus{
+    outline: none;
+    outline-style: none;
+
+}
+
+.work-info-container {
+    padding-right: 15%;
+    margin-top: 16vh;
+    
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    text-align: right;
+    z-index: 21;
+}
+
+.work-info-text-box {
+    
+    top: 1em;
+    right: 5%;
+    width: 40%;
+    text-align: right;
+    z-index: 7;
+    position: absolute;
+}
+
+.work-info-logo {
+    top: 1%;
+    margin-top: -1em;
+    width: calc(2em + 5vw);
+    height: auto;
+    text-align: right;
+    z-index: 7;
+    position: relative;
+    display: inline-block;
+    object-fit: contain;
+}
+
+.work-info-logo img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.work-info-p1box {
+    margin-top: calc(-17vh + 2.2em);
+    margin-right: calc(5vw + 3em);
+}
+
+.work-info-p1box p {
+    color: gray;
+    display: inline-block;
+    font-size: calc(1vw + 0.2em);
+    font-weight: bold;
+    
+    
+}
+.work-info-p2box {
+    margin-top: -1vh;
+}
+
+.work-info-p2box p {
+    color: gray;
+    display: inline-block;
+    font-size: calc(1vw + 0.3em);
+    font-weight: bold;
+    
+}
+
+.work-info-image-box {
+    top: 1%;
+    
+    width: calc(5em + 17vw);
+    height: auto;
+    margin-left: calc(5vw + 8em);
+    
+    text-align: right;
+    z-index: 7;
+    position: absolute;
+    object-fit: contain;
+    
+}
+
+.work-info-image-box img {
+    
+    max-width: 100%;
+    max-height: 100%;
+    
+    
+    
+}
+.order-box {
+    position: absolute;
+    margin-left: 40%;
+    margin-top: 5em;
+}
+
+.order-now-btn {
+    
+    
+    height: calc(1vh + 1.5em + 5px);
+    width: calc(7vh + 5em);
+    display: block;
+    margin-left: 60%;
+    padding: 3px 10px 3px 5px;
+    position: relative;
+    font-size: calc(0.5em + 0.8vw + 3px);
+    background-color: transparent;
+    background: radial-gradient(rgba(255, 255, 255, 0.062) 50%,rgba(124, 121, 121, 0.192) 80%);
+    color: rgb(29, 190, 169);
+    box-shadow:0.2em 0.2em 0.3em rgba(3, 3, 0.3, 0.29) ;
+    
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  .order-now-btn:hover {
+    background-color: rgba(31, 218, 171, 0.507);
+    color: white;
+    transition: ease 0.3s all;
+    
+  }
+  .order-now-btn:active {
+    background-color: rgb(36, 204, 162);
+    color: rgb(218, 211, 211);
+    box-shadow:inset 0.14em 0.14em 0.24em rgba(3, 3, 0.3, 0.29) ;
+    transition: ease 0.2s all;
+    margin-left: 59%;
+    font-size: calc(0.5em + 0.8vw + 2px);
+  }
+  .order-now-btn:focus {
+      outline: none;
+      outline-style: none;
+  }
+
+  
 /******************************************************/
+.oo {
+    display: none;
+}
+.hide-content {
+   opacity: 0;
+   margin-left: -100vw;
+   transition: ease 0.5s all;
+   transform: scale(0);
+}
 
+.show-content {
+    opacity: 1;
+    transition: ease 0.3s all;
+    
+    
+}
+.hero-scale{
+    z-index: 1;
+    
+    transform: none;
+}
+
+.work-info-box {
+    height: 100vh;
+    
+    margin-top: -100vh;
+    
+    
+    
+    
+    transition: ease 0.5s all;
+    
+    
+}
+
+ /* width */
+ ::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 3px 2px 6px gray;
+    border-radius: 6px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(22, 223, 156, 0.411);
+    border-radius: 6px;
+  } 
+
+ /* Handle on hover */
+ ::-webkit-scrollbar-thumb:hover {
+    background: rgba(17, 196, 136, 0.521);
+   }
+
+/*--------------------------------------------*/
+ .fadeinn {
+    
+
+            animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; margin-right: 5em; }
+    to   { opacity: 1;  margin-right: 0em;}
+}
 
 
 

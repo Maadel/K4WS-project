@@ -41,7 +41,7 @@ export default class aboutC extends Component {
               <div className="hero-bg">
                 <img src={aboutBG} alt="About Backgroud"/>
 
-                <div className="about-text">
+                <div className="about-text fadeinn">
                   <h1>من نحن</h1>
 
                   <p className="about-text-p1">

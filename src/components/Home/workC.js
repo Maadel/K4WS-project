@@ -30,6 +30,7 @@ export default class aboutC extends Component {
       workBtnsCss:"about-text in",
       workHeroSwitch:"show-content",
       workInfoSwitch:"hide-content",
+      infoTextBoxCss:"work-info-text-box ",
 
       description:props.items.edges,
       currentNode:""
@@ -53,11 +54,11 @@ export default class aboutC extends Component {
   }
 
   workBtnHandler = ({node}) => {
-    this.setState({ workHeroSwitch:"hide-content",workInfoSwitch:"show-content", currentNode:node})
+    this.setState({ workHeroSwitch:"hide-content",workInfoSwitch:"show-content",infoTextBoxCss:"work-info-text-box fadeinn", currentNode:node})
   }
 
   workCloseHandler = () => {
-    this.setState({workHeroSwitch:"show-content", workInfoSwitch:"hide-content"})
+    this.setState({workHeroSwitch:"show-content",infoTextBoxCss:"work-info-text-box ", workInfoSwitch:"hide-content"})
   }
 
   navbarHandler = () => {
@@ -175,7 +176,7 @@ export default class aboutC extends Component {
                 </div>
                 <div className="work-info-container">
                   
-                  <div className="work-info-text-box ">
+                  <div className={this.state.infoTextBoxCss}>
                     <div className="work-info-logo">
                     <Img fluid={this.state.currentNode?.logo?.fluid == null ? "s" : this.state.currentNode.logo.fluid} className=""/>
                     </div>

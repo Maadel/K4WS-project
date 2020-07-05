@@ -175,15 +175,15 @@ export default class aboutC extends Component {
                 </div>
                 <div className="work-info-container">
                   
-                  <div className="work-info-text-box fadeinn">
+                  <div className="work-info-text-box ">
                     <div className="work-info-logo">
                     <Img fluid={this.state.currentNode?.logo?.fluid == null ? "s" : this.state.currentNode.logo.fluid} className=""/>
                     </div>
                     <div className="work-info-p1box">
-                    <p key={this.state.currentNode?.id} className="fadeinn">{this.state.currentNode?.description1}</p>
+                    <p key={this.state.currentNode?.id} className="">{this.state.currentNode?.description1}</p>
                     </div>
                     <div className="work-info-p2box">
-                    <p key={this.state.currentNode?.id} className="fadeinn">{this.state.currentNode?.description2}</p>
+                    <p key={this.state.currentNode?.id} className="">{this.state.currentNode?.description2}</p>
                     </div>
                     <div className="order-box">
                     <AniLink fade to="/contact">

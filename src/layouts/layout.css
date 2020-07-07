@@ -516,7 +516,7 @@ form input[type=submit] {
   .service-row {
     display: block;
     margin-top: 3em;
-    margin-bottom: -3vw;
+    margin-bottom: -2%;
     
     max-height: inherit;
     
@@ -652,8 +652,8 @@ form input[type=submit] {
   .btn4-eclips {
     width: calc(3em + 7vh);
     height: calc(3em + 7vh);
-    margin-left:calc(3em + 10vw);
-    margin-right: calc(4em + 14vw);
+    margin-left:13em;
+    margin-right: 20em;
     font-size: calc(50% + 0.9vh);
 
   }
@@ -667,8 +667,8 @@ form input[type=submit] {
   .btn6-eclips {
     width: calc( 5em + 12vh);
     height: calc(5em + 12vh);
-    margin-left:calc(4em + 10vw);
-    margin-right: calc(5em + 13vw);
+    margin-left:12em;
+    margin-right: 16em;
     font-size: calc(50% + 1.6vh);
     
 

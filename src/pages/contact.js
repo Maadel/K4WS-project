@@ -3,7 +3,7 @@ import React from "react"
 
 import SEO from "../components/seo"
 
-import ContactC from "../components/Home/ContactC"
+import ContactC from "../components/Home/contactC"
 
 const ContactPage = ({ data }) => (
   <>

@@ -1308,9 +1308,30 @@ work-filter {
 
 /***************************************************************************************************************/
 
-/*main-carousel*/
+.whatsapp-btn {
+    position: absolute;
+    width: 8vw;
+    height: auto;
+    left:85%;
+    top:85%;
+    transition: all 0.2s ease;
+    z-index: 999;
 
+}
 
+.whatsapp-btn img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 100px;
+}
+
+.whatsapp-btn:hover {
+    width: 9vw;
+}
+
+.whatsapp-btn:active {
+    width: 8.3vw;
+}
 
 
 

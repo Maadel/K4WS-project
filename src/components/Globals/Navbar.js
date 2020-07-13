@@ -15,6 +15,7 @@ import iconServ from "../../images/icon-serv.png"
 import iconWork from "../../images/icon-work.png"
 import iconWho from "../../images/icon-who.png"
 import iconCall from "../../images/icon-call.png"
+import whatsappIcon from "../../images/whatsapp-logo.png"
 
 
 
@@ -83,7 +84,7 @@ export default function Navbar() {
 
       </div>
 
-      
+      <div className="btn whatsapp-btn"><a href="https://wa.me/00966548252956"><img src={whatsappIcon} alt="whatsapp logo"/></a></div>
     </div>
     
   )

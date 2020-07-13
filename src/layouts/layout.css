@@ -236,6 +236,7 @@ h1,h2,h3,h4,h5,h6 {
     justify-content: right;
     max-width: 80vw;
     line-height: 4vh;
+    
    
     
 }
@@ -365,11 +366,13 @@ h1,h2,h3,h4,h5,h6 {
     padding: 0%;
     right: 0%;
     width: 80%;
-    height: 90%;
+    height: 99%;
     overflow-y: scroll;
     text-align: right;
     z-index: 3;
     position: absolute;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(21, 192, 149, 0.568) rgba(11, 204, 140, 0.151);
 }
 .about-text h1{
     color: rgb(233, 223, 223);
@@ -405,6 +408,8 @@ h1,h2,h3,h4,h5,h6 {
     text-align: right;
     z-index: 3;
     position: absolute;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(21, 192, 149, 0.568) rgba(11, 204, 140, 0.137);
 
 }
 .contact-text h1{
@@ -523,6 +528,8 @@ form input[type=submit] {
     z-index: 4;
     position: absolute;
     font-size: calc(0.2em + 0.7vw);
+    scrollbar-width: thin;
+    scrollbar-color: rgba(21, 192, 149, 0.904) rgba(11, 204, 140, 0.137);
     
   }
   .service-row {
@@ -764,11 +771,13 @@ form input[type=submit] {
     
     
     position: absolute;
-    height: 95%;
+    height: 99%;
     width: 100%;
     overflow-y: scroll;
     text-align: right;
     z-index: 21;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(206, 200, 200) rgba(11, 204, 140, 0.185);
 }
 
 .info2-container h1{
@@ -807,9 +816,11 @@ form input[type=submit] {
 .info3-container {
     
     overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(206, 200, 200) rgba(11, 204, 140, 0.151);
     
     position: absolute;
-    height: 95%;
+    height: 99%;
     width: 100%;
     text-align: right;
     z-index: 21;
@@ -856,9 +867,11 @@ form input[type=submit] {
 .info4-container {
     
     overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(206, 200, 200) rgba(11, 204, 140, 0.151);
     
     position: absolute;
-    height: 99%;
+    height: 100%;
     width: 100%;
     text-align: right;
     z-index: 21;
@@ -892,10 +905,11 @@ form input[type=submit] {
 
 .info5-container {
     
-    
+    scrollbar-width: thin;
+    scrollbar-color: rgb(206, 200, 200) rgba(11, 204, 140, 0.151);
     overflow-y: scroll;
     position: absolute;
-    height: 95%;
+    height: 100%;
     width: 100%;
     text-align: right;
     z-index: 21;
@@ -924,9 +938,10 @@ form input[type=submit] {
 .info6-container {
     
     overflow-y: scroll;
-    
+    scrollbar-width: thin;
+    scrollbar-color: rgb(206, 200, 200) rgba(11, 204, 140, 0.151);
     position: absolute;
-    height: 95%;
+    height: 99%;
     width: 100%;
     text-align: right;
     z-index: 21;

@@ -1,8 +1,14 @@
 import React, { Component } from "react"
 import mainBG from "../../images/main-bg.png"
+import carousel2 from "../../images/about-bg.png"
+import carousel3 from "../../images/contact-bg.png"
+import carousel4 from "../../images/service-bg.png"
+
 import klogo from "../../images/logo-k4ws.png"
 import { FaBars } from "react-icons/fa"
 import { Link } from "gatsby"
+import Slider from "react-slick"
+
 
 export default class main extends Component {
   constructor(props) {
@@ -22,38 +28,52 @@ export default class main extends Component {
         })
   }
   render() {
+    var settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      adaptiveHeight: true,
+      arrows: true,
+      pauseOnHover: false,
+      pauseOnDotsHover: true,
+      LazyLoad: true,
+      dotsClass:"vertical-dots"
+    }
     return (
-      <div className="container-fluid">
-        <div className="row">
+      <div className="container-fluid px-0">
+        <div className="row mx-0">
           <div className={this.state.css}>
             <div className="logo-k4ws">
-            <Link to="/">
-              <img src={klogo} alt="Logo"/>
-            </Link>
+              <Link to="/">
+                <img src={klogo} alt="Logo" />
+              </Link>
             </div>
             <div className="toggle-btn">
               <button onClick={this.navbarHandler}>
-              <FaBars />
+                <FaBars />
               </button>
             </div>
             <div>
-              <div className="hero-bg">
-                <img src={mainBG} alt="Man Background"/>
-             
-                <div className="main-text fadeinn">
+              <Slider {...settings}>
+                <div>
                 
-                  
-                <h1>شركة خطاب</h1>
-                              
-                  <p> شركة خطاب ويب للبرمجيات شركة سعودية<br/>  رسمية تخدم أكثر من 5000 عميل علي <br/> مستوي العالم نتواجد في اكثر من 15 دولة</p>
-                  
-                  
+                  <img src={mainBG} className="img-fluid w-100" alt=""/>
                 </div>
-               
-              </div>
+                <div>
+                <img src={carousel2} className="img-fluid w-100" alt=""/>
+                </div>
+                <div>
+                <img src={carousel3} className="img-fluid w-100" alt=""/>
+                </div>
+                <div>
+                <img src={carousel4} className="img-fluid w-100" alt=""/>
+                </div>
+                
+              </Slider>
             </div>
-
-
           </div>
         </div>
       </div>

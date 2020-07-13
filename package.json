@@ -22,7 +22,9 @@
     "react-dom": "^16.12.0",
     "react-helmet": "^6.0.0",
     "react-icons": "^3.10.0",
+    "react-slick": "^0.26.1",
     "react-transition-group": "^4.4.1",
+    "slick-carousel": "^1.8.1",
     "typeface-almarai": "^1.1.3"
   },
   "devDependencies": {

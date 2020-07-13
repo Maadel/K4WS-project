@@ -226,7 +226,8 @@ h1,h2,h3,h4,h5,h6 {
     min-height: 80vh;
     width: auto;
     overflow: hidden;
-    
+    padding-right: 0 !important;
+    padding-left: 0 !important;
     position: relative;
     box-shadow: 15px 20px 20px rgba(3, 3, 0.3, 0.29);
     transition:all 0.5s ease;
@@ -240,6 +241,8 @@ h1,h2,h3,h4,h5,h6 {
 }
 .hero-full {
     font-size: 150%;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
   
     max-height: 100vh;
     margin-top: 0vh;
@@ -278,7 +281,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 .toggle-btn button {
     font-size: calc(95% + 1vw);
-    color: rgba(241, 237, 237, 0.842);
+    color: rgb(92, 79, 79);
     position: relative;
     margin-right: 20vh;
     z-index: 99;
@@ -287,13 +290,14 @@ h1,h2,h3,h4,h5,h6 {
     border: none;
 }
 .toggle-btn button:hover {
-    color: rgba(255, 255, 255, 0.938);
+    color: rgb(35, 71, 59);
+    transition: ease 0.2s all;
 }
 .toggle-btn button:active {
     font-size: calc(85% + 1vw);
     margin-left: 2%;
     margin-top: 2%;
-    color: rgba(245, 240, 240, 0.685);
+    color: rgb(38, 148, 106);
     transition: ease .1s all;
 
 }
@@ -310,9 +314,8 @@ h1,h2,h3,h4,h5,h6 {
 .hero-bg {
     height: 100vh;
     width: auto;
-    margin-top: 0vh;
-    margin-bottom: 0vh;
-    margin-left: -15px;
+    
+    
     z-index: 2;
     
   }
@@ -1137,15 +1140,15 @@ work-filter {
 }
 
 .work-info-p1box {
-    margin-top: calc(-30% + 5em);
-    margin-right: calc(5vw + 2em);
+    margin-top: calc(-15vh + 1.6em);
+    margin-right: calc(9vh + 2em);
     min-height: 10vh;
 }
 
 .work-info-p1box p {
     color: gray;
     display: inline-block;
-    font-size: calc(1vw + 0.2em);
+    font-size: calc(2vh + 0.2em);
     font-weight: bold;
     
     
@@ -1157,7 +1160,7 @@ work-filter {
 .work-info-p2box p {
     color: gray;
     display: inline-block;
-    font-size: calc(1vw + 0.3em);
+    font-size: calc(2vh + 0.2em);
     font-weight: bold;
     
 }
@@ -1167,6 +1170,7 @@ work-filter {
     
     width: calc(5em + 17vw);
     height: auto;
+    max-height: 50%;
     margin-left: calc(5vw + 8em);
     
     text-align: right;
@@ -1176,10 +1180,11 @@ work-filter {
     
 }
 
-.work-info-image-box img {
+.work-info-image {
     
     max-width: 100%;
     max-height: 100%;
+    
     
     
     
@@ -1302,6 +1307,15 @@ work-filter {
 
 
 /***************************************************************************************************************/
+
+/*main-carousel*/
+
+
+
+
+
+
+/************************/
 
 .img-wraper{
     margin: 30px auto;

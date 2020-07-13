@@ -50,6 +50,21 @@ export const query = graphql`
             ...GatsbyContentfulFluid_tracedSVG
           }
         }
+        image1{
+          fluid(maxWidth:500, quality:100){
+            ...GatsbyContentfulFluid_tracedSVG
+          }
+        }
+        image2{
+          fluid(maxWidth:500, quality:100){
+            ...GatsbyContentfulFluid_tracedSVG
+          }
+        }
+        image3{
+          fluid(maxWidth:500, quality:100){
+            ...GatsbyContentfulFluid_tracedSVG
+          }
+        }
         description1
         description2
         category

@@ -6,6 +6,7 @@ import { Link } from "gatsby"
 import Img from "gatsby-image"
 import workInfoBG from "../../images/work-info-bg.png"
 import AniLink from "gatsby-plugin-transition-link/AniLink";
+import Slider from "react-slick";
 //import { node } from "prop-types"
 
 const getCategories = items => {
@@ -70,7 +71,20 @@ export default class aboutC extends Component {
         })
   }
   render() {
-    console.log(this.state.categories)
+    var settings = {
+      fade: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      adaptiveHeight: true,
+      arrows: true,
+      pauseOnHover: false,
+      pauseOnDotsHover: true,
+      LazyLoad: true,
+      dotsClass:"vertical-dots"
+    }
     return (
       <div>
       <div className={"container-fluid hero-scale " + this.state.workHeroSwitch}>
@@ -193,7 +207,21 @@ export default class aboutC extends Component {
                     </div>
                   </div>
                   <div className="work-info-image-box">
-                  <Img fluid={this.state.currentNode?.image?.fluid == null ? "s" : this.state.currentNode.image.fluid} className="work-info-image fadeinn"/>
+                  <Slider {...settings}>
+                <div>
+                
+                <Img fluid={this.state.currentNode?.image1?.fluid == null ? "s" : this.state.currentNode.image1.fluid} className="work-info-image fadeinn"/>
+                </div>
+                <div>
+                <Img fluid={this.state.currentNode?.image2?.fluid == null ? "s" : this.state.currentNode.image2.fluid} className="work-info-image fadeinn"/>
+                </div>
+                <div>
+                <Img fluid={this.state.currentNode?.image3?.fluid == null ? "s" : this.state.currentNode.image3.fluid} className="work-info-image fadeinn"/>
+                </div>
+              
+                
+              </Slider>
+                  {/*<Img fluid={this.state.currentNode?.image?.fluid == null ? "s" : this.state.currentNode.image.fluid} className="work-info-image fadeinn"/>*/}
             
                   {/*<Img fluid={this.state.currentNode.image.fluid} className="work-info-image"/>*/}
                   </div>

@@ -5,6 +5,8 @@ import "./bootstrap.min.css";
 import "./layout.css";
 import Navbar from "../components/Globals/Navbar";
 import Transition from "../components/transition";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 
 

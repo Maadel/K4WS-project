@@ -1309,13 +1309,14 @@ work-filter {
 /***************************************************************************************************************/
 
 .whatsapp-btn {
-    position: absolute;
+    position: fixed;
     width: 8vw;
     height: auto;
     left:85%;
-    top:85%;
+    top:82%;
     transition: all 0.2s ease;
     z-index: 999;
+    opacity: 1;
 
 }
 

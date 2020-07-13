@@ -28,7 +28,7 @@ export default class aboutC extends Component {
       workItems:props.items.edges,
       categories: getCategories(props.items.edges),
       btn1Switch: "btn-info-off",
-      workBtnsCss:"about-text in",
+      workBtnsCss:"work-text in",
       workHeroSwitch:"show-content",
       workInfoSwitch:"hide-content",
       infoTextBoxCss:"work-info-text-box ",

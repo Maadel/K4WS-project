@@ -281,7 +281,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 .toggle-btn button {
     font-size: calc(95% + 1vw);
-    color: rgb(92, 79, 79);
+    color: rgb(68, 62, 62);
     position: relative;
     margin-right: 20vh;
     z-index: 99;
@@ -290,14 +290,14 @@ h1,h2,h3,h4,h5,h6 {
     border: none;
 }
 .toggle-btn button:hover {
-    color: rgb(35, 71, 59);
+    color: rgb(0, 0, 0);
     transition: ease 0.2s all;
 }
 .toggle-btn button:active {
     font-size: calc(85% + 1vw);
     margin-left: 2%;
     margin-top: 2%;
-    color: rgb(38, 148, 106);
+    color: rgb(57, 73, 67);
     transition: ease .1s all;
 
 }
@@ -362,10 +362,11 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .about-text {
-    padding: 5%;
-    right: 15%;
+    padding: 0%;
+    right: 0%;
     width: 80%;
-    
+    height: 90%;
+    overflow-y: scroll;
     text-align: right;
     z-index: 3;
     position: absolute;
@@ -376,6 +377,8 @@ h1,h2,h3,h4,h5,h6 {
     font-weight: bold;
     font-size: calc(80% + 1.5vw);
     margin-bottom: 3vh;
+    margin-right: 15%;
+    margin-top: 5%;
     
 }
 .about-text p {
@@ -385,18 +388,20 @@ h1,h2,h3,h4,h5,h6 {
 }
 .about-text-p1 {
     margin-top: 8%;
+    margin-right: 7%;
 
 }
 .about-text-p2 {
     margin-top: 5%;
-    margin-right: 7%;
+    margin-right: 14%;
 }
 
 .contact-text {
-    padding: 5%;
-    right: 15%;
+    padding: 0%;
+    right: 0%;
     width: 80%;
-    
+    height: 99%;
+    overflow-y: scroll;
     text-align: right;
     z-index: 3;
     position: absolute;
@@ -408,10 +413,13 @@ h1,h2,h3,h4,h5,h6 {
     font-weight: bold;
     font-size: calc(1em + 1.5vw);
     margin-bottom: 1em;
+    margin-right: 15%;
+    margin-top: 5%;
     
 }
 form {
     margin-top: 5%;
+    margin-right: 15%;
     text-align: right;
     
 }
@@ -506,9 +514,10 @@ form input[type=submit] {
       display: flex;
   }
   .service-text {
-    padding: 1%;
-    width: 90%;
     
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
     
     text-align: right;
     z-index: 4;
@@ -638,8 +647,8 @@ form input[type=submit] {
   .btn2-eclips {
     width: calc(7em + 5vh);
     height: calc(7em + 5vh);
-    margin-left:calc(4em + 6vw);
-    margin-right: calc(2em + 6vw);
+    margin-left:calc(5em + 9vw);
+    margin-right: calc(5em + 9vw);
     font-size: calc(50% + 1.2vh);
 
   }
@@ -655,8 +664,8 @@ form input[type=submit] {
   .btn4-eclips {
     width: calc(3em + 7vh);
     height: calc(3em + 7vh);
-    margin-left:13em;
-    margin-right: 20em;
+    margin-left:calc(5em + 9vw);
+    margin-right: calc(12em + 15vw);
     font-size: calc(50% + 0.9vh);
 
   }
@@ -670,8 +679,8 @@ form input[type=submit] {
   .btn6-eclips {
     width: calc( 5em + 12vh);
     height: calc(5em + 12vh);
-    margin-left:12em;
-    margin-right: 16em;
+    margin-left:calc(4em + 7vw);
+    margin-right: calc(12em + 15vw);
     font-size: calc(50% + 1.6vh);
     
 
@@ -751,17 +760,20 @@ form input[type=submit] {
 }
 
 .info2-container {
-    padding-right: 15%;
-    margin-top: 16vh;
+    
+    
     
     position: absolute;
-    height: 100%;
+    height: 95%;
     width: 100%;
+    overflow-y: scroll;
     text-align: right;
     z-index: 21;
 }
 
 .info2-container h1{
+    margin-top: 16vh;
+    margin-right: 10%;
     color: rgb(233, 223, 223);
     display: block;
     font-weight: bold;
@@ -770,6 +782,7 @@ form input[type=submit] {
     
 }
 .info2-container p {
+    margin-right: 10%;
     display: block;
     font-size: calc(50% + 1vw);
     font-weight: bold;
@@ -792,11 +805,11 @@ form input[type=submit] {
 }
 
 .info3-container {
-    padding-right: 15%;
-    margin-top: 16vh;
+    
+    overflow-y: scroll;
     
     position: absolute;
-    height: 100%;
+    height: 95%;
     width: 100%;
     text-align: right;
     z-index: 21;
@@ -807,6 +820,8 @@ form input[type=submit] {
 }
 
 .info3-container h1{
+    margin-top: 16vh;
+    margin-right: 15%;
     color: rgb(233, 223, 223);
     display: block;
     font-weight: bold;
@@ -815,6 +830,7 @@ form input[type=submit] {
     
 }
 .info3-container p {
+    margin-right: 15%;
     display: block;
     font-size: calc(50% + 1vw);
     font-weight: bold;
@@ -838,11 +854,11 @@ form input[type=submit] {
 }
 
 .info4-container {
-    padding-right: 15%;
-    margin-top: 16vh;
+    
+    overflow-y: scroll;
     
     position: absolute;
-    height: 100%;
+    height: 99%;
     width: 100%;
     text-align: right;
     z-index: 21;
@@ -850,6 +866,8 @@ form input[type=submit] {
 }
 
 .info4-container h1{
+    margin-top: 16vh;
+    margin-right: 15%;
     color: rgb(233, 223, 223);
     display: block;
     font-weight: bold;
@@ -859,6 +877,7 @@ form input[type=submit] {
 }
 .info4-container p {
     display: block;
+    margin-right: 15%;
     font-size: calc(50% + 1vw);
     font-weight: bold;
     line-height: 1.7em;
@@ -866,17 +885,17 @@ form input[type=submit] {
 }
 
 .info4-container p:nth-of-type(2) {
-    margin-top: 2em;
-    margin-right: 29vw;
+    margin-top: 3%;
+    margin-right: 40%;
     font-weight: bold;
 }
 
 .info5-container {
-    padding-right: 15%;
-    margin-top: 16vh;
     
+    
+    overflow-y: scroll;
     position: absolute;
-    height: 100%;
+    height: 95%;
     width: 100%;
     text-align: right;
     z-index: 21;
@@ -884,6 +903,8 @@ form input[type=submit] {
 }
 
 .info5-container h1{
+    margin-top: 16vh;
+    margin-right: 15%;
     color: rgb(233, 223, 223);
     display: block;
     font-weight: bold;
@@ -892,6 +913,7 @@ form input[type=submit] {
     
 }
 .info5-container p {
+    margin-right: 15%;
     display: block;
     font-size: calc(50% + 1vw);
     font-weight: bold;
@@ -900,17 +922,19 @@ form input[type=submit] {
 }
 
 .info6-container {
-    padding-right: 15%;
-    margin-top: 16vh;
+    
+    overflow-y: scroll;
     
     position: absolute;
-    height: 100%;
+    height: 95%;
     width: 100%;
     text-align: right;
     z-index: 21;
 }
 
 .info6-container h1{
+    margin-top: 16vh;
+    margin-right: 10%;
     color: rgb(233, 223, 223);
     display: block;
     font-weight: bold;
@@ -920,6 +944,7 @@ form input[type=submit] {
 }
 .info6-container p {
     display: block;
+    margin-right: 10%;
     font-size: calc(50% + 1vw);
     font-weight: bold;
     line-height: 1.8em;
@@ -1027,6 +1052,30 @@ work-filter {
 
     
 
+}
+
+
+.work-text {
+    padding: 5%;
+    right: 15%;
+    width: 80%;
+    
+    text-align: right;
+    z-index: 3;
+    position: absolute;
+}
+.work-text h1{
+    color: rgb(233, 223, 223);
+    display: block;
+    font-weight: bold;
+    font-size: calc(80% + 1.5vw);
+    margin-bottom: 3vh;
+    
+}
+.work-text p {
+    display: block;
+    font-size: calc(50% + 2vh);
+    
 }
 
 .filter-btn {

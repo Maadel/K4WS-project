@@ -24,32 +24,32 @@ export const query2 = graphql`
         title
         workIcon{
           fluid(maxWidth: 500, quality: 100){
-            ...GatsbyContentfulFluid_tracedSVG
+            ...GatsbyContentfulFluid
           }
         }
         logo{
           fluid(maxWidth:500, quality: 100){
-            ...GatsbyContentfulFluid_tracedSVG
+            ...GatsbyContentfulFluid
           }
         }
         image{
           fluid(maxWidth:500, quality:100){
-            ...GatsbyContentfulFluid_tracedSVG
+            ...GatsbyContentfulFluid
           }
         }
         image1{
           fluid(maxWidth:500, quality:100){
-            ...GatsbyContentfulFluid_tracedSVG
+            ...GatsbyContentfulFluid
           }
         }
         image2{
           fluid(maxWidth:500, quality:100){
-            ...GatsbyContentfulFluid_tracedSVG
+            ...GatsbyContentfulFluid
           }
         }
         image3{
           fluid(maxWidth:500, quality:100){
-            ...GatsbyContentfulFluid_tracedSVG
+            ...GatsbyContentfulFluid
           }
         }
         description1

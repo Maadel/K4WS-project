@@ -8,7 +8,7 @@ import ServiceC from "../components/Home/serviceC"
 const ServicePage = ({ data }) => (
   <>
     <SEO title="Services" />
-    <ServiceC items={data.workData}/>
+    <ServiceC items={data.workDataS}/>
   </>
 )
 
@@ -17,7 +17,7 @@ const ServicePage = ({ data }) => (
 export const query2 = graphql`
 {
 
-  workData:allContentfulOurWork{
+  workDataS:allContentfulOurWork{
     edges{
       node{
         id

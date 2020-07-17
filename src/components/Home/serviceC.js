@@ -7,6 +7,11 @@ import klogo from "../../images/logo-k4ws.png"
 import infoArrow from "../../images/info-arrow.png"
 import { FaBars, FaTimes } from "react-icons/fa"
 import { Link } from "gatsby"
+//----work pieces------------------------------
+import Img from "gatsby-image"
+import workInfoBG from "../../images/work-info-bg.png"
+import AniLink from "gatsby-plugin-transition-link/AniLink";
+import Slider from "react-slick";
 
 export default class serviceC extends Component {
   constructor(props) {
@@ -21,7 +26,25 @@ export default class serviceC extends Component {
       btn4Switch: "btn-info-off",
       btn5Switch: "btn-info-off",
       btn6Switch: "btn-info-off",
+      //----work pieces---------------------------
+      items:props.items.edges,
+      workItems: Array.from(props.items.edges ).filter(e => e.node.category ==='app').reverse().slice(0,2),
+      
+      workBtnsCss:"work-text in",
+      workHeroSwitch:"show-content",
+      workInfoSwitch:"hide-content",
+      infoTextBoxCss:"work-info-text-box ",
+      description:props.items.edges,
+      currentNode:""
     }
+  }
+
+  workBtnHandler = ({node}) => {
+    this.setState({ workHeroSwitch:"hide-content",workInfoSwitch:"show-content",infoTextBoxCss:"work-info-text-box fadeinn", currentNode:node})
+  }
+
+  workCloseHandler = () => {
+    this.setState({workHeroSwitch:"show-content",infoTextBoxCss:"work-info-text-box ", workInfoSwitch:"hide-content"})
   }
 
   navbarHandler = () => {
@@ -71,8 +94,23 @@ export default class serviceC extends Component {
     this.setState({ infoCss: "service-info", btnsCss: "service-text fade" })
   }
   render() {
+    var settings = {
+      fade: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      adaptiveHeight: true,
+      arrows: true,
+      pauseOnHover: false,
+      pauseOnDotsHover: true,
+      LazyLoad: true,
+      dotsClass:"vertical-dots"
+    }
     return (
-      <div className="container-fluid">
+      <div>
+      <div className={"container-fluid hero-scale " + this.state.workHeroSwitch}>
         <div className="row">
           <div className={this.state.css}>
             <div className="logo-k4ws">
@@ -98,7 +136,7 @@ export default class serviceC extends Component {
                       onClick={this.btn1Handler}
                     >
                       تصميم مواقع
-                      <br /> مثل حراج
+                      <br />  الحــراج
                     </button>
                     <button
                       className="btn-eclips btn2-eclips"
@@ -188,11 +226,31 @@ export default class serviceC extends Component {
                     <br /> نطاق مجاني بالاضافه الى مساحه غير محدوده وقواعد
                     بيانات غير قابلة للاختراق
                   </p>
-                  <img src={infoArrow} alt="Info Arrow2"/>
-                  <button className="btn-eclips btn2-eclips">
-                    تصميم و برمجة
-                    <br /> المتاجر الإلكترونية
-                  </button>
+                  {/*work pieces************************************/}
+                  <div className="work-text-s">
+                 
+                  {/*items */}
+                  <div className="row">
+                  <AniLink fade to="/work">
+                    <button className="more-btn"> &lt; &lt; &lt; المزيــد </button>
+                  </AniLink>
+                    {this.state.workItems.map(({node}, i) => {
+                      return(
+                        <button key={node.id} className="col-10 col-md-5 work-btn-s"
+                        onClick={() => this.workBtnHandler({node})}>
+                          <div className="work-img-box-s">
+                            <Img fluid={node.workIcon.fluid} className="work-img-s"/>
+                          </div>
+                        </button>
+                        
+                      )
+
+                    })}
+                  </div>
+
+                
+                </div>
+              
                 </div>
               </div>
             </div>
@@ -336,6 +394,81 @@ export default class serviceC extends Component {
             </div>
           </div>
         </div>
+      </div>
+      <div className={"container-fluid  work-info-box " + this.state.workInfoSwitch}>
+        <div className="row">
+          <div className={"overflow-hidden " + this.state.css}>
+          <div className="logo-k4ws">
+            <Link to="/">
+              <img src={klogo} alt="Logo"/>
+            </Link>
+            </div>
+            <div className="toggle-btn">
+              <button onClick={this.navbarHandler}>
+              <FaBars />
+              </button>
+            </div>
+            <div>
+              <div className="hero-bg">
+                {/*<img src={workBG} alt="Work Backgroud"/>*/}
+
+
+       
+              </div>
+            </div>
+            <div className="btn-info-box btn-info-on">
+              <div className="row">
+                <div className="service-close-btn">
+                  <button onClick={this.workCloseHandler}>
+                  <FaTimes />
+                  </button>
+                </div>
+                <div className="service-info-bg">
+                  <img src={workInfoBG} alt="Info Backgroud1" className="work-in-service-info-bg"/>
+                </div>
+                <div className="work-info-container">
+                  
+                  <div className={this.state.infoTextBoxCss}>
+                    <div className="work-info-logo">
+                    <Img fluid={this.state.currentNode?.logo?.fluid == null ? "s" : this.state.currentNode.logo.fluid} className=""/>
+                    </div>
+                    <div className="work-info-p1box">
+                    <p key={this.state.currentNode?.id} className="">{this.state.currentNode?.description1}</p>
+                    </div>
+                    <div className="work-info-p2box">
+                    <p key={this.state.currentNode?.id} className="">{this.state.currentNode?.description2}</p>
+                    </div>
+                    <div className="order-box">
+                    <AniLink fade to="/contact">
+                     <button className="order-now-btn"> اطلب الان</button>
+                    </AniLink>
+                    </div>
+                  </div>
+                  <div className="work-info-image-box">
+                  <Slider {...settings}>
+                <div>
+                
+                <Img fluid={this.state.currentNode?.image1?.fluid == null ? "s" : this.state.currentNode.image1.fluid} className="work-info-image fadeinn"/>
+                </div>
+                <div>
+                <Img fluid={this.state.currentNode?.image2?.fluid == null ? "s" : this.state.currentNode.image2.fluid} className="work-info-image fadeinn"/>
+                </div>
+                <div>
+                <Img fluid={this.state.currentNode?.image3?.fluid == null ? "s" : this.state.currentNode.image3.fluid} className="work-info-image fadeinn"/>
+                </div>
+              
+                
+              </Slider>
+                  {/*<Img fluid={this.state.currentNode?.image?.fluid == null ? "s" : this.state.currentNode.image.fluid} className="work-info-image fadeinn"/>*/}
+            
+                  {/*<Img fluid={this.state.currentNode.image.fluid} className="work-info-image"/>*/}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       </div>
     )
   }

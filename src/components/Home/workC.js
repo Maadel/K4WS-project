@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 //import workBG from "../../images/work-bg.png"
 import klogo from "../../images/logo-k4ws.png"
-import { FaBars } from "react-icons/fa"
+import { FaBars, FaTimes } from "react-icons/fa"
 import { Link } from "gatsby"
 import Img from "gatsby-image"
 import workInfoBG from "../../images/work-info-bg.png"
@@ -123,7 +123,7 @@ export default class aboutC extends Component {
                       return(
                         <button key={node.id} className="col-10 col-md-5 work-btn"
                         onClick={() => this.workBtnHandler({node})}>
-                          <div>
+                          <div className="work-img-box">
                             <Img fluid={node.workIcon.fluid} className="work-img fadeinn"/>
                           </div>
                         </button>
@@ -182,7 +182,7 @@ export default class aboutC extends Component {
               <div className="row">
                 <div className="service-close-btn">
                   <button onClick={this.workCloseHandler}>
-                  X
+                  <FaTimes />
                   </button>
                 </div>
                 <div className="service-info-bg">

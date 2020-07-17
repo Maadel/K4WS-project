@@ -14,22 +14,9 @@ const ServicePage = ({ data }) => (
 
 
 
-export const query = graphql`
+export const query2 = graphql`
 {
-  imageOne: file(relativePath: { eq: "harag.png" }) {
-    childImageSharp {
-      fluid(maxWidth: 1000) {
-        ...GatsbyImageSharpFluid_tracedSVG
-      }
-    }
-  }
-  imageTwo: file(relativePath: { eq: "halal.png" }) {
-    childImageSharp {
-      fluid(maxWidth: 1000) {
-        ...GatsbyImageSharpFluid_tracedSVG
-      }
-    }
-  }
+
   workData:allContentfulOurWork{
     edges{
       node{

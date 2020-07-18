@@ -130,7 +130,8 @@ export default class serviceC extends Component {
                 <img src={serviceBG} alt="Service Backgroud"/>
 
                 <div className={this.state.btnsCss}>
-                  <div className="service-row">
+                  <div className="row">
+                    <div className="col-10 service-btn-box">
                     <button
                       className="btn-eclips btn1-eclips"
                       onClick={this.btn1Handler}
@@ -145,8 +146,7 @@ export default class serviceC extends Component {
                       تصميم و برمجة
                       <br /> المتاجر الإلكترونية
                     </button>
-                  </div>
-                  <div className="service-row">
+                 
                     <button
                       className="btn-eclips btn3-eclips"
                       onClick={this.btn3Handler}
@@ -160,8 +160,7 @@ export default class serviceC extends Component {
                     >
                       إستضافة
                     </button>
-                  </div>
-                  <div className="service-row">
+                 
                     <button
                       className="btn-eclips btn5-eclips"
                       onClick={this.btn5Handler}
@@ -178,6 +177,7 @@ export default class serviceC extends Component {
                       <br /> جميع المواقع
                       <br /> الإلكترونية
                     </button>
+                  </div>
                   </div>
                 </div>
               </div>

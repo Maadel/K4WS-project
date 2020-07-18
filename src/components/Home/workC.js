@@ -4,7 +4,7 @@ import klogo from "../../images/logo-k4ws.png"
 import { FaBars, FaTimes } from "react-icons/fa"
 import { Link } from "gatsby"
 import Img from "gatsby-image"
-import workInfoBG from "../../images/work-info-bg.png"
+import workInfoBG from "../../images/work-info01.jpg"
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 import Slider from "react-slick";
 //import { node } from "prop-types"

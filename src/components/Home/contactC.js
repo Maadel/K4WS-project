@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import contactBG from "../../images/contact-bg.png"
+import contactBG from "../../images/contact01.jpg"
 import klogo from "../../images/logo-k4ws.png"
 import { FaBars } from "react-icons/fa"
 import { Link } from "gatsby"

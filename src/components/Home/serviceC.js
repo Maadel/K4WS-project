@@ -1,15 +1,15 @@
 import React, { Component } from "react"
-import serviceBG from "../../images/serv2.png"
-import infoBG1 from "../../images/info-bg1.png"
-import info4BG from "../../images/info4-bg.png"
-import info5BG from "../../images/info5-bg.png"
+import serviceBG from "../../images/service01.jpg"
+import infoBG1 from "../../images/btn101.jpg"
+import info4BG from "../../images/btn401.jpg"
+import info5BG from "../../images/btn501.jpg"
 import klogo from "../../images/logo-k4ws.png"
 import infoArrow from "../../images/info-arrow.png"
 import { FaBars, FaTimes } from "react-icons/fa"
 import { Link } from "gatsby"
 //----work pieces------------------------------
 import Img from "gatsby-image"
-import workInfoBG from "../../images/work-info-bg.png"
+import workInfoBG from "../../images/work-info01.jpg"
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 import Slider from "react-slick";
 

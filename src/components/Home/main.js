@@ -1,8 +1,8 @@
 import React, { Component } from "react"
-import mainBG from "../../images/main-bg.png"
-import carousel2 from "../../images/about-bg.png"
-import carousel3 from "../../images/contact-bg.png"
-import carousel4 from "../../images/service-bg.png"
+import mainBG from "../../images/main01.jpg"
+import carousel2 from "../../images/about01.jpg"
+import carousel3 from "../../images/contact01.jpg"
+import carousel4 from "../../images/service01.jpg"
 
 import klogo from "../../images/logo-k4ws.png"
 import { FaBars } from "react-icons/fa"

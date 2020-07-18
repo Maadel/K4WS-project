@@ -102,7 +102,7 @@ h1,h2,h3,h4,h5,h6 {
     border-right:7px solid rgba(219, 219, 219, 0.849);
     
     box-shadow: 5px 5px 10px rgba(3, 3, 0.3, 0.29);
-    background-image: radial-gradient(rgba(255, 255, 255, 0.062) 50%,rgba(124, 121, 121, 0.192) 80%),url("../images/btn1.png");
+    background-image: radial-gradient(rgba(255, 255, 255, 0.062) 50%,rgba(124, 121, 121, 0.192) 80%);
     transition:all 0.1s ease;
     outline: 0;
     
@@ -112,7 +112,7 @@ h1,h2,h3,h4,h5,h6 {
 .btn-circle:hover {
     color: grey;
     border:7px inset outset rgba(240, 234, 234, 0.205);
-    background-image: radial-gradient(rgba(255, 255, 255, 0.767) 20%,rgba(124, 121, 121, 0.082) 80%),url("../images/btn1.png");
+    background-image: radial-gradient(rgba(255, 255, 255, 0.767) 20%,rgba(124, 121, 121, 0.082) 80%);
     
 }
 .btn-circle:active {
@@ -174,7 +174,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .bg {
     position: fixed; 
-    background-image: url(../images/bg3.jpg);
+    background-image: url(../images/nav01.jpg);
     top: 0; 
     left: 0; 
       
@@ -462,7 +462,7 @@ form input[type=text], [type=email] {
 
 form input[type=submit] {
     
-    margin-top: -2em;
+    margin-top: -2.7em;
     height: calc(1vh + 1.5em + 5px);
     width: calc(7vh + 5em);
     display: block;
@@ -1034,7 +1034,7 @@ work-filter {
     justify-content: right;
     
     background-color: rgba(131, 130, 130, 0.13);
-    background: url("../images/work-bg.png");
+    background: url("../images/work01.jpg");
     max-width: 80vw;
     scrollbar-width: thin;
     scrollbar-color: rgba(21, 192, 149, 0.568) rgb(230, 233, 230);
@@ -1053,7 +1053,7 @@ work-filter {
     overflow-y: scroll;
     transition:all 0.5s ease;
     background-color: rgba(71, 70, 70, 0.582);
-    background: url("../images/work-bg.png");
+    background: url("../images/work01.jpg");
  
     border-bottom-right-radius: 5%;
     scrollbar-width: thin;

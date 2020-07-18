@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import serviceBG from "../../images/service01.jpg"
+import serviceBG from "../../images/service02.jpg"
 import infoBG1 from "../../images/btn101.jpg"
 import info4BG from "../../images/btn401.jpg"
 import info5BG from "../../images/btn501.jpg"

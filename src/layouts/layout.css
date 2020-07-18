@@ -592,8 +592,8 @@ form input[type=submit] {
     border-radius: 100%;
     box-shadow: 5px 5px 10px rgba(58, 55, 55, 0.507);
     display: inline-block;
-    font-weight: bolder;
-    color: rgb(61, 57, 57);
+    
+    color: rgb(58, 53, 53);
     font-size: 1.5em;
     
 

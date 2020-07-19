@@ -282,7 +282,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 .toggle-btn button {
     font-size: calc(95% + 1vw);
-    color: rgb(68, 62, 62);
+    color: rgb(90, 83, 83);
     position: relative;
     margin-right: 20vh;
     z-index: 99;
@@ -293,6 +293,7 @@ h1,h2,h3,h4,h5,h6 {
 .toggle-btn button:hover {
     color: rgb(0, 0, 0);
     transition: ease 0.2s all;
+    
 }
 .toggle-btn button:active {
     font-size: calc(85% + 1vw);
@@ -559,6 +560,7 @@ form input[type=submit] {
     font-weight: bolder;
     color: rgb(61, 57, 57);
     z-index: 999;
+    transition: ease 0.9s all;
 
   }
   .btn-nav:hover {
@@ -566,14 +568,20 @@ form input[type=submit] {
     background-size: cover;
     transition: ease 0.2s all;
     color: rgb(61, 58, 58);
+    animation: rotation 2s infinite linear;
+    
     
   }
   .btn-nav:active {
     box-shadow: 3px 3px 7px rgba(58, 55, 55, 0.507);
     color: rgb(61, 58, 58);
-    transform: scale(0.97);
+    
 
   }
+  .btn-nav img:hover {
+    animation: rotation 2s infinite linear;
+  }
+
   .btn-nav:focus {
       outline: none;
   }
@@ -592,9 +600,9 @@ form input[type=submit] {
     border-radius: 100%;
     box-shadow: 5px 5px 10px rgba(58, 55, 55, 0.507);
     display: inline-block;
-    
+    transition: ease 0.9s all;
     color: rgb(58, 53, 53);
-    font-size: 1.5em;
+    font-size: 1.4em;
     
 
 }
@@ -603,6 +611,7 @@ form input[type=submit] {
     background-size: cover;
     transition: ease 0.2s all;
     color: rgb(61, 58, 58);
+    transform: scale(1.1);
     
   }
 
@@ -649,7 +658,7 @@ form input[type=submit] {
 
   }
   .service-btn-box {
-      margin-top: 3em;
+      margin-top: 5vh;
       
   }
   .btn1-eclips {
@@ -1114,6 +1123,9 @@ work-filter {
 .filter-btn:hover {
     background-color: rgba(17, 236, 189, 0.89);
     color: white;
+    -webkit-animation: glow2 1s ease-in-out infinite alternate;
+    -moz-animation: glow2 1s ease-in-out infinite alternate;
+    animation: glow2 1s ease-in-out infinite alternate;
 }
 .filter-btn:active {
     background-color: rgba(27, 175, 138, 0.925);
@@ -1210,7 +1222,7 @@ work-filter {
 
 .work-info-p1box {
     margin-top: calc(-15vh + 1.6em);
-    margin-right: calc(9vh + 2em);
+    margin-right: calc(8vh + 3em);
     min-height: 10vh;
 }
 
@@ -1236,7 +1248,7 @@ work-filter {
 }
 
 .work-info-image-box {
-    top: 2%;
+    
     
     width: calc(5em + 17vw);
     height: auto;
@@ -1365,12 +1377,12 @@ work-filter {
     background-color: transparent;
     color: rgb(224, 216, 216);
     height: 5vh;
-    width: 10vw;
+    width: 12vw;
     margin-top: 17vh;
-    margin-left: 22vw;
+    margin-left: 20vw;
     margin-right: 2vw;
     font-weight: bold;
-    font-size: calc(20px + 50%);
+    font-size: calc(15px + 50%);
     border: none;
     transition: ease 0.2s all;
 }
@@ -1468,7 +1480,7 @@ work-filter {
     height: auto;
     left:85%;
     top:82%;
-    transition: all 0.2s ease;
+    transition: all 1s ease;
     z-index: 999;
     opacity: 1;
 
@@ -1482,10 +1494,12 @@ work-filter {
 
 .whatsapp-btn:hover {
     width: 9vw;
+    transition: ease 0.5s all;
 }
 
 .whatsapp-btn:active {
     width: 8.3vw;
+    transition: ease 0.2s all;
 }
 
 
@@ -1634,6 +1648,56 @@ work-filter {
 }
 
 
+.glow {
+ 
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
 
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 18px #fff, 0 0 25px #e60073, 0 0 33px #e60073, 0 0 40px #e60073, 0 0 48px #e60073, 0 0 55px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 22px #ff4da6, 0 0 24px #ff4da6, 0 0 26px #ff4da6, 0 0 30px #ff4da6, 0 0 35px #ff4da6, 0 0 40px #ff4da6;
+  }
+}
+  
+
+.glow2 {
+ 
+    -webkit-animation: glow2 1s ease-in-out infinite alternate;
+    -moz-animation: glow2 1s ease-in-out infinite alternate;
+    animation: glow2 1s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glow2 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 18px #fff, 0 0 25px #16d48b, 0 0 33px #02df95, 0 0 40px #03e4c6, 0 0 48px #00e699, 0 0 55px #00e6c0;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 22px rgb(0, 247, 255), 0 0 24px #00fff2, 0 0 40px #00ffaa, 0 0 45px #00dbac, 0 0 55px #50ca91, 0 0 65px #03ffc8;
+    }
+  }
+    
+  .rotate {
+    animation: rotation 2s infinite linear;
+  }
+
+  @keyframes rotation {
+      25% {
+          transform: rotate(10deg)
+      }
+    50% {
+      transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-10deg);
+      }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
 
 

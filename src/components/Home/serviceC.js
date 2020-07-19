@@ -191,11 +191,49 @@ export default class serviceC extends Component {
                   </button>
                 </div>
                 <div className="service-info-bg">
-                  <img src={infoBG1} alt="Info Backgroud1"/>
+                  <img src={infoBG1} alt="Info Backgroud2"/>
                 </div>
                 <div className="info2-container">
-                  <h1>hello</h1>
-                  <p> Unfinished xxxxxx </p>
+                  <h1>تصميم مواقع الحراج</h1>
+                  <p>
+                    شركة خطاب ويب شركة تصميم متاجر الكترونية في المملكة تتمتع
+                    بامكانيات
+                    <br /> وخبرات كبيرة نضعها في متناول عملائنا الكرام. لماذا
+                    شركة خطاب ويب أفضل شركة <br />
+                    تصميم متاجر الكترونية في السعودية؟ نقدم في شركة خطاب ويب
+                    خدمة تصميم
+                    <br /> متاجر الكترونية في السعودية يتمتع بالعديد من المميزات
+                    من بينها: اضافة متجرك
+                    <br /> لمحركات البحث ,تدريب العميل وموظفيه مجاناً ,دعم فني
+                    متميز ومتكامل ,توفير
+                    <br /> نطاق مجاني بالاضافه الى مساحه غير محدوده وقواعد
+                    بيانات غير قابلة للاختراق
+                  </p>
+                  {/*work pieces************************************/}
+                  <div className="work-text-s">
+                 
+                  {/*items */}
+                  <div className="row">
+                  <AniLink fade to="/work">
+                    <button className="more-btn"><p className="glow"> &lt; &lt; &lt; المزيــد </p></button>
+                  </AniLink>
+                    {this.state.workItems.map(({node}, i) => {
+                      return(
+                        <button key={node.id} className="col-10 col-md-5 work-btn-s"
+                        onClick={() => this.workBtnHandler({node})}>
+                          <div className="work-img-box-s">
+                            <Img fluid={node.workIcon.fluid} className="work-img-s"/>
+                          </div>
+                        </button>
+                        
+                      )
+
+                    })}
+                  </div>
+
+                
+                </div>
+              
                 </div>
               </div>
             </div>
@@ -232,7 +270,7 @@ export default class serviceC extends Component {
                   {/*items */}
                   <div className="row">
                   <AniLink fade to="/work">
-                    <button className="more-btn"> &lt; &lt; &lt; المزيــد </button>
+                    <button className="more-btn"><p className="glow"> &lt; &lt; &lt; المزيــد </p></button>
                   </AniLink>
                     {this.state.workItems.map(({node}, i) => {
                       return(

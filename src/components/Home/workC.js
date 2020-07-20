@@ -7,6 +7,9 @@ import Img from "gatsby-image"
 import workInfoBG from "../../images/work-info01.jpg"
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 import Slider from "react-slick";
+import gplay from "../../images/gplay01.png"
+import appstore from "../../images/appstore01.png"
+import wwweb from "../../images/wwweb00.png"
 //import { node } from "prop-types"
 
 const getCategories = items => {
@@ -71,6 +74,7 @@ export default class aboutC extends Component {
         })
   }
   render() {
+    const appcheck = this.state.currentNode.category;
     var settings = {
       fade: true,
       infinite: true,
@@ -185,7 +189,7 @@ export default class aboutC extends Component {
                   <FaTimes />
                   </button>
                 </div>
-                <div className="service-info-bg">
+                <div className="work-info-bg">
                   <img src={workInfoBG} alt="Info Backgroud1"/>
                 </div>
                 <div className="work-info-container">
@@ -225,6 +229,18 @@ export default class aboutC extends Component {
             
                   {/*<Img fluid={this.state.currentNode.image.fluid} className="work-info-image"/>*/}
                   </div>
+                  {appcheck === 'app' ? (
+                      <div className="app-box">
+                        <button className="app-btn"><div><img src={gplay} alt=""/></div></button>
+                        <button className="app-btn"><div><img src={appstore} alt=""/></div></button>  
+                      </div> 
+                   ) : (
+                    <div className="app-box web-box">
+                    <button className="app-btn"><div className="web-btn"><img src={wwweb} alt=""/></div></button>
+                    </div>
+                    )
+                  }
+              
                 </div>
               </div>
             </div>

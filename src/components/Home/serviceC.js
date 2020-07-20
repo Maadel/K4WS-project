@@ -1,10 +1,10 @@
 import React, { Component } from "react"
 import serviceBG from "../../images/service02.jpg"
-import infoBG1 from "../../images/btn101.jpg"
+import infoBG0 from "../../images/work01.jpg"
+//import infoBG1 from "../../images/btn101.jpg"
 import info4BG from "../../images/btn401.jpg"
 import info5BG from "../../images/btn501.jpg"
 import klogo from "../../images/logo-k4ws.png"
-import infoArrow from "../../images/info-arrow.png"
 import { FaBars, FaTimes } from "react-icons/fa"
 import { Link } from "gatsby"
 //----work pieces------------------------------
@@ -12,6 +12,9 @@ import Img from "gatsby-image"
 import workInfoBG from "../../images/work-info01.jpg"
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 import Slider from "react-slick";
+import gplay from "../../images/gplay01.png"
+import appstore from "../../images/appstore01.png"
+import wwweb from "../../images/wwweb00.png"
 
 export default class serviceC extends Component {
   constructor(props) {
@@ -94,6 +97,7 @@ export default class serviceC extends Component {
     this.setState({ infoCss: "service-info", btnsCss: "service-text fade" })
   }
   render() {
+    const appcheck = this.state.currentNode.category;
     var settings = {
       fade: true,
       infinite: true,
@@ -191,7 +195,7 @@ export default class serviceC extends Component {
                   </button>
                 </div>
                 <div className="service-info-bg">
-                  <img src={infoBG1} alt="Info Backgroud2"/>
+                  <img src={infoBG0} alt="Info Backgroud2"/>
                 </div>
                 <div className="info2-container">
                   <h1>تصميم مواقع الحراج</h1>
@@ -214,9 +218,11 @@ export default class serviceC extends Component {
                  
                   {/*items */}
                   <div className="row">
+                    <div>
                   <AniLink fade to="/work">
-                    <button className="more-btn"><p className="glow"> &lt; &lt; &lt; المزيــد </p></button>
+                    <button className="more-btn"><span className="glow"> &lt; &lt; &lt; المزيــد </span></button>
                   </AniLink>
+                    </div>
                     {this.state.workItems.map(({node}, i) => {
                       return(
                         <button key={node.id} className="col-10 col-md-5 work-btn-s"
@@ -246,7 +252,7 @@ export default class serviceC extends Component {
                   </button>
                 </div>
                 <div className="service-info-bg">
-                  <img src={infoBG1} alt="Info Backgroud2"/>
+                  <img src={infoBG0} alt="Info Backgroud2"/>
                 </div>
                 <div className="info2-container">
                   <h1>تصميم وبرمجة المتاجر الإلكترونية</h1>
@@ -269,9 +275,11 @@ export default class serviceC extends Component {
                  
                   {/*items */}
                   <div className="row">
+                    <div>
                   <AniLink fade to="/work">
-                    <button className="more-btn"><p className="glow"> &lt; &lt; &lt; المزيــد </p></button>
+                    <button className="more-btn"><span className="glow"> &lt; &lt; &lt; المزيــد </span></button>
                   </AniLink>
+                    </div>
                     {this.state.workItems.map(({node}, i) => {
                       return(
                         <button key={node.id} className="col-10 col-md-5 work-btn-s"
@@ -301,9 +309,9 @@ export default class serviceC extends Component {
                   </button>
                 </div>
                 <div className="service-info-bg">
-                  <img src={infoBG1} alt="Info Background3"/>
+                  <img src={infoBG0} alt="Info Background3"/>
                 </div>
-                <div className="info3-container">
+                <div className="info2-container">
                   <h1>تصميم تطبيقات الجوال</h1>
                   <p>
                     تحرص خطاب ويب على تصميم تطبيقات الجوال بشكل يسمح
@@ -315,10 +323,32 @@ export default class serviceC extends Component {
                     التطبيقات على جوجل بلاي وآب ستور ,امكانية التعديل والتطوير
                     <br /> المستقبلي للتطبيق
                   </p>
-                  <img src={infoArrow} alt="Info Arrow3"/>
-                  <button className="btn-eclips btn2-eclips">
-                    تصميم كافة <br /> تطبيقات الجوال
-                  </button>
+                 {/*work pieces************************************/}
+                 <div className="work-text-s">
+                 
+                 {/*items */}
+                 <div className="row">
+                   <div>
+                 <AniLink fade to="/work">
+                   <button className="more-btn"><span className="glow"> &lt; &lt; &lt; المزيــد </span></button>
+                 </AniLink>
+                   </div>
+                   {this.state.workItems.map(({node}, i) => {
+                     return(
+                       <button key={node.id} className="col-10 col-md-5 work-btn-s"
+                       onClick={() => this.workBtnHandler({node})}>
+                         <div className="work-img-box-s">
+                           <Img fluid={node.workIcon.fluid} className="work-img-s"/>
+                         </div>
+                       </button>
+                       
+                     )
+
+                   })}
+                 </div>
+
+               
+               </div>
                 </div>
               </div>
             </div>
@@ -410,9 +440,9 @@ export default class serviceC extends Component {
                   </button>
                 </div>
                 <div className="service-info-bg">
-                  <img src={infoBG1} alt="Info Background6"/>
+                  <img src={infoBG0} alt="Info Background6"/>
                 </div>
-                <div className="info6-container">
+                <div className="info2-container">
                   <h1> تصميم مواقع إلكترونية</h1>
                   <p>
                     تتمثل خبرة خطاب ويب في تصميم موقع الكتروني في الخطوات
@@ -422,11 +452,32 @@ export default class serviceC extends Component {
                     تدريب العميل ومن يرغب من موظفيه على لوحة التحكم الخاصة
                     بالموقع
                   </p> <br/>
-                  <img src={infoArrow} alt="Info Arrow6"/>
-                  <button className="btn-eclips btn2-eclips">
-                    تصميم و برمجة
-                    <br /> المتاجر الإلكترونية
-                  </button>
+               {/*work pieces************************************/}
+               <div className="work-text-s">
+                 
+                 {/*items */}
+                 <div className="row">
+                   <div>
+                 <AniLink fade to="/work">
+                   <button className="more-btn"><span className="glow"> &lt; &lt; &lt; المزيــد </span></button>
+                 </AniLink>
+                   </div>
+                   {this.state.workItems.map(({node}, i) => {
+                     return(
+                       <button key={node.id} className="col-10 col-md-5 work-btn-s"
+                       onClick={() => this.workBtnHandler({node})}>
+                         <div className="work-img-box-s">
+                           <Img fluid={node.workIcon.fluid} className="work-img-s"/>
+                         </div>
+                       </button>
+                       
+                     )
+
+                   })}
+                 </div>
+
+               
+               </div>
                 </div>
               </div>
             </div>
@@ -461,7 +512,7 @@ export default class serviceC extends Component {
                   <FaTimes />
                   </button>
                 </div>
-                <div className="service-info-bg">
+                <div className="work-info-bg">
                   <img src={workInfoBG} alt="Info Backgroud1" className="work-in-service-info-bg"/>
                 </div>
                 <div className="work-info-container">
@@ -501,6 +552,17 @@ export default class serviceC extends Component {
             
                   {/*<Img fluid={this.state.currentNode.image.fluid} className="work-info-image"/>*/}
                   </div>
+                  {appcheck === 'app' ? (
+                      <div className="app-box">
+                        <button className="app-btn"><div><img src={gplay} alt=""/></div></button>
+                        <button className="app-btn"><div><img src={appstore} alt=""/></div></button>  
+                      </div> 
+                   ) : (
+                    <div className="app-box web-box">
+                    <button className="app-btn"><div className="web-btn"><img src={wwweb} alt=""/></div></button>
+                    </div>
+                    )
+                  }
                 </div>
               </div>
             </div>

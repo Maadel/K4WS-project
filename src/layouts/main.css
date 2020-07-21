@@ -1,0 +1,36 @@
+.main-bg {
+    
+    margin-right: 0vh;
+    object-fit: fill;
+    
+    
+    position: relative;
+    
+    
+   
+    justify-content: right;
+    
+}
+
+.main-text {
+    top: 38%;
+    right: 10%;
+    width: 40%;
+    text-align: right;
+    z-index: 7;
+    position: absolute;
+    line-height: calc(2vw + 3vh);
+
+}
+.main-text h1{
+    display: block;
+    font-weight: bold;
+    font-size: calc(80% + 1.8vw);
+    margin-bottom: 3vh;
+    
+}
+.main-text p {
+    display: block;
+    font-size: calc(70% + 1.2vw);
+}
+

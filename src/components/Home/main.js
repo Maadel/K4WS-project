@@ -24,7 +24,7 @@ export default class main extends Component {
       ? this.setState({ navbarOpen: false, css: "hero-full col-12" })
       : this.setState({
           navbarOpen: true,
-          css: "hero-min col-10",
+          css: "hero-min col-12 col-md-10",
         })
   }
   render() {

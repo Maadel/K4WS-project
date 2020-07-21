@@ -21,7 +21,7 @@ export default class serviceC extends Component {
     super(props)
     this.state = {
       navbarOpen: false,
-      css: "hero-min col-10",
+      css: "hero-min col-12 col-md-10",
       btnsCss: "service-text in",
       btn1Switch: "btn-info-off",
       btn2Switch: "btn-info-off",
@@ -52,7 +52,7 @@ export default class serviceC extends Component {
 
   navbarHandler = () => {
     this.state.navbarOpen
-      ? this.setState({ navbarOpen: false, css: "hero-min col-10" })
+      ? this.setState({ navbarOpen: false, css: "hero-min col-12 col-md-10" })
       : this.setState({
           navbarOpen: true,
           css: "hero-full col-12",

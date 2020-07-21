@@ -1,0 +1,36 @@
+.about-text {
+    padding: 0%;
+    right: 0%;
+    width: 80%;
+    height: 99%;
+    overflow-y: scroll;
+    text-align: right;
+    z-index: 3;
+    position: absolute;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(21, 192, 149, 0.568) rgba(11, 204, 140, 0.151);
+}
+.about-text h1{
+    color: rgb(233, 223, 223);
+    display: block;
+    font-weight: bold;
+    font-size: calc(80% + 1.5vw);
+    margin-bottom: 3vh;
+    margin-right: 15%;
+    margin-top: 5%;
+    
+}
+.about-text p {
+    display: block;
+    font-size: calc(50% + 2vh);
+    
+}
+.about-text-p1 {
+    margin-top: 8%;
+    margin-right: 7%;
+
+}
+.about-text-p2 {
+    margin-top: 5%;
+    margin-right: 14%;
+}

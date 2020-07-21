@@ -73,7 +73,7 @@ export default function Navbar() {
           </li>
           <li>
             <AniLink fade to="/contact">
-            <button className="btn-nav mt-3"><img src={iconCall} alt=""/> اتصل بنا</button>
+            <button className="btn-nav"><img src={iconCall} alt=""/> اتصل بنا</button>
             </AniLink>
           </li>
         </ul>

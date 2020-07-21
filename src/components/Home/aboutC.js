@@ -10,13 +10,13 @@ export default class aboutC extends Component {
     super(props)
     this.state = {
       navbarOpen: false,
-      css: "hero-min col-10",
+      css: "hero-min col-12 col-md-10",
     }
   }
 
   navbarHandler = () => {
     this.state.navbarOpen
-      ? this.setState({ navbarOpen: false, css: "hero-min col-10" })
+      ? this.setState({ navbarOpen: false, css: "hero-min col-12 col-md-10" })
       : this.setState({
           navbarOpen: true,
           css: "hero-full col-12",

@@ -120,6 +120,8 @@
     transition: ease 0.2s all;
 }
 
+/************** MOBILE VIEW *****************/
+
 @media  (orientation: portrait), (max-width: 500px) {
   .whatsapp-btn {
     position: fixed;
@@ -147,13 +149,13 @@
 }
 
 .btn-nav {
-  width: 9.5vh;
-  height: 9.5vh;
-  font-size: 1.5vh;
+  width: 15vw;
+  height: 15vw;
+  font-size: 2.5vw;
 }
 
 .btn-nav img {
-  height: 2.8vh;
+  height: 5vw;
   margin-bottom: 0.5vh;
 }
 .btn-arrow1 {

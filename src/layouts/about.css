@@ -34,3 +34,27 @@
     margin-top: 5%;
     margin-right: 14%;
 }
+
+/************** MOBILE VIEW *****************/
+
+@media  (orientation: portrait), (max-width: 500px) {
+    .about-text h1 {
+        margin-top: 10%;
+        font-size: 35px;
+    }
+
+    .about-text p {
+        display: block;
+        font-size: 20px;
+        
+    }
+    .about-text-p1 {
+        margin-top: 8%;
+        margin-right: 7%;
+    
+    }
+    .about-text-p2 {
+        margin-top: 5%;
+        margin-right: 7%;
+    }
+}

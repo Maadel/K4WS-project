@@ -9,7 +9,7 @@ import AniLink from "gatsby-plugin-transition-link/AniLink";
 import Slider from "react-slick";
 import gplay from "../../images/gplay01.png"
 import appstore from "../../images/appstore01.png"
-import wwweb from "../../images/wwweb08.png"
+import wwweb from "../../images/http01.png"
 //import { node } from "prop-types"
 
 const getCategories = items => {
@@ -26,7 +26,7 @@ export default class aboutC extends Component {
     super(props)
     this.state = {
       navbarOpen: false,
-      css: "work-hero-min col-10",
+      css: "work-hero-min col-12 col-md-10",
       items:props.items.edges,
       workItems:props.items.edges,
       categories: getCategories(props.items.edges),
@@ -67,7 +67,7 @@ export default class aboutC extends Component {
 
   navbarHandler = () => {
     this.state.navbarOpen
-      ? this.setState({ navbarOpen: false, css: "work-hero-min col-10" })
+      ? this.setState({ navbarOpen: false, css: "work-hero-min col-12 col-md-10" })
       : this.setState({
           navbarOpen: true,
           css: "work-hero-full col-12",

@@ -5,7 +5,9 @@ import carousel3 from "../../images/contact01.jpg"
 import carousel4 from "../../images/service01.jpg"
 
 import klogo from "../../images/logo-k4ws.png"
-import { FaBars } from "react-icons/fa"
+import { FaBars, FaFacebook, FaLinkedin } from "react-icons/fa"
+import { MdPhoneIphone} from "react-icons/md"
+
 import { Link } from "gatsby"
 import Slider from "react-slick"
 
@@ -74,6 +76,34 @@ export default class main extends Component {
                 
               </Slider>
             </div>
+            <div className="main-text">
+              <h1> شركة خطاب</h1>
+              <p>
+              شركة خطاب ويب للبرمجيات شركة سعودية
+رسمية تخدم أكثر من 5000 عميل علي
+ مستوي العالم نتواجد في أكثر من 15 دولة
+              </p>
+            </div>
+            <footer>
+              <div className="row">
+                <button className="footer-btn1">
+                  
+                    <FaFacebook/>
+
+                  
+                </button>
+                <button className="footer-btn2">
+                  
+                    <FaLinkedin/>
+
+                  
+                </button>
+                <button className="footer-btn3">
+                  <MdPhoneIphone/>:01092773477
+                </button>
+              </div>
+              <p>© 2020 Kkatab Web and Application services , Inc. All rights reserved.</p>
+            </footer>
           </div>
         </div>
       </div>

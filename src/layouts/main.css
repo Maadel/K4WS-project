@@ -19,9 +19,10 @@
    
     
     width: 100%;
+    overflow: hidden;
     overflow-y: scroll;
     
-    height: 50vh;
+    height: 60vh;
     position: relative;
     
     
@@ -52,18 +53,20 @@
     font-size: 22px;
     line-height: 180%;
     
+    
 }
 .main-text2 {
+    
     text-align: right;
-    padding: 10% 2%;
+    padding: 10% 5%;
     border-top: 2px dotted rgb(163, 154, 154);
     
 }
 .main-text2 ul {
     margin-top: 8%;
     font-size: 12px;
-    margin-left: 10vw;
-    margin-right: 10vw;
+    margin-left: 15vw;
+    
 }
 .main-text2 ul li{
     margin-bottom: 10px;
@@ -83,30 +86,61 @@
 }
 
 .main-text2 p {
-    width: 50%;
+    width: 45%;
     font-size: 22px;
+    margin-left: 5vw;
+    line-height: 150%;
+}
+
+.main-text3 {
+    
+    text-align: right;
+    padding: 10% 5%;
+    border-top: 2px dotted rgb(163, 154, 154);
+    
+}
+.main-text3 ul {
+    margin-top: 8%;
+    font-size: 12px;
+    margin-left: 10vw;
+    
+}
+.main-text3 ul li{
+    margin-bottom: 10px;
+}
+
+.main-text3 p {
+    width: 45%;
+    font-size: 22px;
+    margin-left: 10vw;
+    line-height: 150%;
 }
 
 
 footer {
     background-color: rgb(80, 173, 142);
     text-align: center;
-    min-height: 10%;
+    height: 7%;
     width: 100%;
     position: fixed;
     bottom: 0;
+    padding: 1%;
+    border-top-right-radius: 50px ;
+    border-top-left-radius: 50px ;
   
 }
 footer p {
-    font-size: 10px;
-    margin-left: 13vw;
+    font-size: 9px;
+    margin-left: 5vw;
     color: black;
+    margin-top: -1.3vh;
+    
 }
 footer button {
     background: transparent;
     border: none;
     margin-left: 5vw;
-    margin-top:  2vh;
+    
     
 }
 
@@ -117,15 +151,15 @@ footer button:focus {
 .footer-btn1 {
     color: #1877f2;
     margin-left: 30vw;
-    font-size: 35px;
+    font-size: 20px;
 }
 .footer-btn2 {
     color:  #007bb5;
-    font-size: 35px;
+    font-size: 20px;
 }
 .footer-btn3 {
     
-    font-size: 25px;
+    font-size: 20px;
 }
 
  /*****vertical dots*******/

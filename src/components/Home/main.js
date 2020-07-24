@@ -58,7 +58,7 @@ export default class main extends Component {
                 <FaBars />
               </button>
             </div>
-            <div>
+            <div className="slider-box">
               <Slider {...settings}>
                 <div>
                 
@@ -95,7 +95,7 @@ export default class main extends Component {
               </div>
 
               </div>
-              <div className="main-text2">
+              <div className="main-text3">
               <div className="row">
               <p>   لدي شركــة خطــاب  خبرة في كثير  الاعمال تمتد لاكثر من عشر سنوات</p>
                 <ul>

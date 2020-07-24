@@ -22,7 +22,7 @@
     overflow: hidden;
     overflow-y: scroll;
     
-    height: 60vh;
+    height: 65vh;
     position: relative;
     
     
@@ -124,7 +124,7 @@ footer {
     width: 100%;
     position: fixed;
     bottom: 0;
-    padding: 1%;
+    
     border-top-right-radius: 50px ;
     border-top-left-radius: 50px ;
   
@@ -133,7 +133,7 @@ footer p {
     font-size: 9px;
     margin-left: 5vw;
     color: black;
-    margin-top: -1.3vh;
+    margin-top: -1.5vh;
     
 }
 footer button {

@@ -510,3 +510,191 @@
 .work-in-service-info-bg {
   transform: scale(1.08);
 }
+
+.more-btn {
+    
+  background-color: transparent;
+  color: rgb(224, 216, 216);
+  height: 6vh;
+  width: 15vw;
+  margin-top: 17vh;
+  margin-left: 17vw;
+  margin-right: 2vw;
+  font-weight: bold;
+  font-size: calc(25px + 50%);
+  border: none;
+  transition: ease 0.3s all;
+}
+
+.more-btn:focus {
+  outline: none;
+}
+.more-btn:hover {
+  font-size: calc(30px + 55%);
+  color: white;
+  animation: rotation 2s infinite linear;
+}
+.more-btn:active {
+  font-size: calc(20px + 50%);
+  color: rgb(185, 177, 177);
+
+}
+
+
+
+
+/************** MOBILE VIEW *****************/
+
+@media  (orientation: portrait), (max-width: 500px) {
+  .service-btn-box .btn-eclips {
+    font-size: 3.5vw;
+    line-height: 140%;
+    margin-bottom: 4vh;
+  }
+  .service-btn-box {
+    margin-top: 12vh;
+    margin-left: 5vw;
+    
+}
+
+  .btn1-eclips {
+    width: 30vw;
+    height: 30vw;
+    
+    margin-left: 0%;
+  }
+  .btn2-eclips {
+    width: 30vw;
+    height: 30vw;
+    margin-left: 10%;
+    
+    
+
+  }
+
+ 
+  .btn3-eclips {
+    width: 30vw;
+    height: 30vw;
+    margin-right: 0%;
+    margin-left:0%;
+  
+
+  }
+  .btn4-eclips {
+    width: 30vw;
+    height: 30vw;
+    margin-left:10%;
+    margin-right: 0%;
+    font-size: 4.5vw !important;
+    
+    
+
+  }
+  .btn5-eclips {
+    width: 30vw;
+    height: 30vw;
+    
+    margin-left:0;
+   
+
+  }
+  .btn6-eclips {
+    width: 30vw;
+    height: 30vw;
+    margin-left: 10%;
+    margin-right: 0%;
+    
+    
+    
+
+  }
+
+  .info2-container {
+    
+    
+    
+    position: absolute;
+    height: 99%;
+    width: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+    text-align: right;
+    z-index: 21;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(206, 200, 200) rgba(11, 204, 140, 0.185);
+    line-height: 30px;
+    
+}
+
+.info2-container h1{
+    margin-top: 15vh;
+    margin-right: 9%;
+    color: rgba(2, 148, 111, 0.849);
+    display: block;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 5vh;
+    
+}
+.info2-container p {
+    text-align: right;
+    margin-left: 30%;
+    width: 60%;
+    
+    
+    font-size: 17px;
+    
+    
+}
+.service-close-btn button {
+  margin-left: 89%;
+  font-size: 20px;
+  color: rgba(37, 34, 34, 0.692);
+  
+  margin-right: 20vw;
+
+  
+}
+.service-close-btn {    
+  margin-top: 9vh;
+}
+.work-btn-s {
+  
+  display: block !important;
+  margin-right: 0vw;
+  margin-left: 20vw;
+  
+}
+
+.work-img-box-s {
+  width: 25vw;
+  height: auto;
+  
+  
+  object-fit: contain;
+}
+
+
+
+.more-btn {
+    
+ 
+  height: 6vh;
+  width: 28vw;
+  margin-top: 5vh;
+  margin-left: 10vw;
+  margin-right: -17vw;
+  
+  font-size: 20px;
+
+}
+.more-btn:hover {
+  font-size: 18px;
+}
+.info-padding-filler {
+  height: 30vh;
+  
+}
+
+}

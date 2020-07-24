@@ -43,7 +43,7 @@
     text-align: center;
 }
 .main-text1 h1{
-    color: #00927a;
+    color: #00aa80;
     display: block;
     font-weight: bold;
     font-size: 40px;
@@ -65,7 +65,7 @@
     
     text-align: right;
     
-    background-color: #00cba9;
+    background-color: #06c28a;
     
     
 }
@@ -76,19 +76,13 @@
     
 }
 .main-text2 ul li{
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
-.main-text2 .main-btn1 {
-    
-    color:white;
-}
-.main-text2 .main-btn2 {
-    background-color: rgba(236, 228, 228, 0.932);
-    color: #00cba9;
-}
+
 
 .main-btn1 {
+    color: white;
     width: 100px;
     border-radius: 50px;
     background-color: rgba(38, 189, 169, 0.829);
@@ -98,9 +92,9 @@
 
 .main-btn2 {
     width: 100px;
-    
+    color: #049b75;
     border-radius: 50px;
-    background-color: rgba(37, 218, 193, 0.144);
+    background-color: #bbe9d7;
     box-shadow: 2px 2px 5px rgba(58, 55, 55, 0.507);
 }
 
@@ -126,7 +120,7 @@
     
 }
 .main-text3 ul li{
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .main-text3 p {
@@ -139,22 +133,24 @@
 
 
 footer {
-    background-color: #00cba9;
+    background-color: #06c28a;
     text-align: center;
     height: 7%;
     width: 100%;
     position: fixed;
     bottom: 0;
-    
+    opacity: 1 !important;
     border-top-right-radius: 50px ;
     border-top-left-radius: 50px ;
+    z-index: 70;
+    padding: 2px;
   
 }
 footer p {
     font-size: 9px;
     margin-left: 5vw;
     color: black;
-    margin-top: -1.5vh;
+    margin-top: -1.3vh;
     
 }
 footer button {

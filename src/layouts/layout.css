@@ -271,10 +271,10 @@ h1,h2,h3,h4,h5,h6 {
   
   @keyframes glow2 {
     from {
-      text-shadow: 0 0 10px #fff, 0 0 18px #fff, 0 0 25px #16d48b, 0 0 33px #02df95, 0 0 40px #03e4c6, 0 0 48px #00e699, 0 0 55px #00e6c0;
+      text-shadow: 0 0 10px #fff, 0 0 18px #fff, 0 0 25px #16d48b, 0 0 33px #02df95, 0 0 40px #486155, 0 0 48px #00e699, 0 0 55px #18e791;
     }
     to {
-      text-shadow: 0 0 20px #fff, 0 0 22px rgb(0, 247, 255), 0 0 24px #00fff2, 0 0 40px #00ffaa, 0 0 45px #00dbac, 0 0 55px #50ca91, 0 0 65px #03ffc8;
+      text-shadow: 0 0 20px #fff, 0 0 22px rgb(210, 226, 221), 0 0 24px #20815c, 0 0 40px #adddcd, 0 0 45px #00dbac, 0 0 55px #ffffff, 0 0 65px #a9dacf;
     }
   }
     
@@ -334,7 +334,12 @@ to   { opacity: 1;  margin-right: 0em;}
     margin-right: 0vh;
     min-height: 0vh;
     max-width: 100vw;
-    border-radius: 30px;
+    border-radius: 1px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
+  .hero-full {
+    border-radius: 0%;
   }
 
   .logo-k4ws img {
@@ -347,9 +352,14 @@ body {
 .bg {
   background-image: url("../images/mob-nav01.jpg");
 }
+.logo-k4ws:hover {
+  transform: scale(0.7);
+  
+}
 
 .toggle-btn {
-  left: 89%;
+  margin-top: 2vh;
+  left: 85%;
 }
 
 .toggle-btn button {

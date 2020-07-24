@@ -97,12 +97,14 @@ form input[type=submit] {
 
     form input[type=text], [type=email] {
         background-color: rgba(25, 175, 142, 0.144);
-        width: 60vw;
+        width: 250px;
+        height: 35px;
     }
 
 .form-textarea {
     background-color: rgba(25, 175, 142, 0.144);
-    width: 60vw;
+    width: 250px;
+    height: 70px;
 }
 form input[type=submit] {
     margin-top: 2em;
@@ -112,12 +114,13 @@ form input[type=submit] {
 }
 
 form label {
-    font-size: calc(15% + 15px) ;
+    font-size: 20px ;
 }
 
 .contact-text h1 {
     margin-top: 16%;
-    font-size: calc(40% + 25px) ;
+    
+    font-size: 35px;
 }
 
   }

@@ -162,7 +162,7 @@ export default class serviceC extends Component {
                       className="btn-eclips btn4-eclips"
                       onClick={this.btn4Handler}
                     >
-                      إستضافة
+                      إستضـــافة
                     </button>
                  
                     <button
@@ -239,6 +239,7 @@ export default class serviceC extends Component {
 
                 
                 </div>
+                    <div className="info-padding-filler"></div>
               
                 </div>
               </div>

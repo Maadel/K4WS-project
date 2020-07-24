@@ -12,9 +12,11 @@
     
 }
 
+
+
 .main-text {
     background-color: rgba(25, 212, 171, 0.11);
-    
+    border-radius: 20px;
     margin-top: -1.2vh;
    
     
@@ -41,11 +43,15 @@
     text-align: center;
 }
 .main-text1 h1{
-    color: rgb(28, 160, 127);;
+    color: #00927a;
     display: block;
     font-weight: bold;
     font-size: 40px;
     margin-bottom: 10%;
+    box-shadow: 3px 3px 6px rgba(58, 55, 55, 0.507);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+
     
 }
 .main-text1 p {
@@ -58,8 +64,9 @@
 .main-text2 {
     
     text-align: right;
-    padding: 10% 5%;
-    border-top: 2px dotted rgb(163, 154, 154);
+    
+    background-color: #00cba9;
+    
     
 }
 .main-text2 ul {
@@ -72,21 +79,34 @@
     margin-bottom: 10px;
 }
 
+.main-text2 .main-btn1 {
+    
+    color:white;
+}
+.main-text2 .main-btn2 {
+    background-color: rgba(236, 228, 228, 0.932);
+    color: #00cba9;
+}
+
 .main-btn1 {
     width: 100px;
     border-radius: 50px;
     background-color: rgba(38, 189, 169, 0.829);
+    box-shadow: 2px 2px 5px rgba(58, 55, 55, 0.507);
     
 }
 
 .main-btn2 {
     width: 100px;
+    
     border-radius: 50px;
     background-color: rgba(37, 218, 193, 0.144);
+    box-shadow: 2px 2px 5px rgba(58, 55, 55, 0.507);
 }
 
 .main-text2 p {
     width: 45%;
+    color: white;
     font-size: 22px;
     margin-left: 5vw;
     line-height: 150%;
@@ -95,8 +115,8 @@
 .main-text3 {
     
     text-align: right;
-    padding: 10% 5%;
-    border-top: 2px dotted rgb(163, 154, 154);
+    padding: 10% 1%;
+   
     
 }
 .main-text3 ul {
@@ -114,11 +134,12 @@
     font-size: 22px;
     margin-left: 10vw;
     line-height: 150%;
+    padding-bottom: 8vh;
 }
 
 
 footer {
-    background-color: rgb(80, 173, 142);
+    background-color: #00cba9;
     text-align: center;
     height: 7%;
     width: 100%;
@@ -259,7 +280,7 @@ footer button:focus {
 
 @media  (orientation: portrait), (max-width: 500px) {
 
-    
+   
 
     .vertical-dots {
         top: 16vh;

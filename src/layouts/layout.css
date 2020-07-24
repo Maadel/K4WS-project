@@ -271,7 +271,7 @@ h1,h2,h3,h4,h5,h6 {
   
   @keyframes glow2 {
     from {
-      text-shadow: 0 0 10px #fff, 0 0 18px #fff, 0 0 25px #16d48b, 0 0 33px #02df95, 0 0 40px #486155, 0 0 48px #00e699, 0 0 55px #18e791;
+      text-shadow: 0 0 10px #fff, 0 0 18px #fff, 0 0 25px #4cd6a1, 0 0 33px #4cd1a5, 0 0 40px #486155, 0 0 48px #68f8c8, 0 0 55px #18e791;
     }
     to {
       text-shadow: 0 0 20px #fff, 0 0 22px rgb(210, 226, 221), 0 0 24px #20815c, 0 0 40px #adddcd, 0 0 45px #00dbac, 0 0 55px #ffffff, 0 0 65px #a9dacf;

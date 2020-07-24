@@ -125,7 +125,7 @@
 @media  (orientation: portrait), (max-width: 500px) {
   .whatsapp-btn {
     position: fixed;
-    width: 14vh;
+    width: 22vw;
     height: auto;
     left:1%;
     top:87%;

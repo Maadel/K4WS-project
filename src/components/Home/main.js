@@ -7,7 +7,7 @@ import carousel4 from "../../images/service01.jpg"
 import klogo from "../../images/logo-k4ws.png"
 import { FaBars, FaFacebook, FaLinkedin } from "react-icons/fa"
 import { MdPhoneIphone} from "react-icons/md"
-
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 import { Link } from "gatsby"
 import Slider from "react-slick"
 
@@ -77,12 +77,38 @@ export default class main extends Component {
               </Slider>
             </div>
             <div className="main-text">
+              <div className="main-text1">
               <h1> شركة خطاب</h1>
               <p>
               شركة خطاب ويب للبرمجيات شركة سعودية
 رسمية تخدم أكثر من 5000 عميل علي
  مستوي العالم نتواجد في أكثر من 15 دولة
               </p>
+              </div>
+              <div className="main-text2">
+              <div className="row">
+                <ul>
+                <li><AniLink fade to="/contact"><button className="main-btn1">أطلب الأن</button></AniLink></li>
+                <li><AniLink fade to="/service"><button className="main-btn2"> تصفح الخدمات</button></AniLink></li>
+                </ul>
+                <p> تقدم شركة خطاب  العديد من الخدمات تقدم شركة خطاب  العديد من الخدمات </p>
+              </div>
+
+              </div>
+              <div className="main-text2">
+              <div className="row">
+              <p>   لدي شركــة خطــاب  خبرة في كثير  الاعمال تمتد لاكثر من عشر سنوات</p>
+                <ul>
+                <li><AniLink fade to="/contact"><button className="main-btn1">أطلب الأن</button></AniLink></li>
+                <li><AniLink fade to="/work"><button className="main-btn2"> تصفح الأعمال</button></AniLink></li>
+                </ul>
+              
+              </div>
+
+              </div>
+
+            
+
             </div>
             <footer>
               <div className="row">
@@ -102,7 +128,8 @@ export default class main extends Component {
                   <MdPhoneIphone/>:01092773477
                 </button>
               </div>
-              <p>© 2020 Kkatab Web and Application services , Inc. All rights reserved.</p>
+              <p>© 2020 Khatab Web and Application services , Inc. All rights reserved.</p>
+              
             </footer>
           </div>
         </div>

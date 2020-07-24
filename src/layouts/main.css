@@ -13,19 +13,33 @@
 }
 
 .main-text {
-    background-color: rgba(25, 212, 171, 0.158);
+    background-color: rgba(25, 212, 171, 0.11);
     
     margin-top: -1.2vh;
-    padding: 10%;
+   
+    
     width: 100%;
-    height: 52vh;
-    text-align: center;
-    z-index: 7;
+    overflow-y: scroll;
+    
+    height: 50vh;
     position: relative;
+    
     
 
 }
-.main-text h1{
+.main-text button {
+    border: 1px solid gray;
+    
+
+}
+.main-text button:focus {
+    outline: none;
+}
+.main-text1 {
+    padding: 10%;
+    text-align: center;
+}
+.main-text1 h1{
     color: rgb(28, 160, 127);;
     display: block;
     font-weight: bold;
@@ -33,21 +47,60 @@
     margin-bottom: 10%;
     
 }
-.main-text p {
+.main-text1 p {
     display: block;
     font-size: 22px;
     line-height: 180%;
     
 }
+.main-text2 {
+    text-align: right;
+    padding: 10% 2%;
+    border-top: 2px dotted rgb(163, 154, 154);
+    
+}
+.main-text2 ul {
+    margin-top: 8%;
+    font-size: 12px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+.main-text2 ul li{
+    margin-bottom: 10px;
+}
+
+.main-btn1 {
+    width: 100px;
+    border-radius: 50px;
+    background-color: rgba(38, 189, 169, 0.829);
+    
+}
+
+.main-btn2 {
+    width: 100px;
+    border-radius: 50px;
+    background-color: rgba(37, 218, 193, 0.144);
+}
+
+.main-text2 p {
+    width: 50%;
+    font-size: 22px;
+}
+
 
 footer {
-    background-color: rgba(23, 145, 104, 0.418);
+    background-color: rgb(80, 173, 142);
     text-align: center;
-    height: 15vh;
+    min-height: 10%;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+  
 }
 footer p {
     font-size: 10px;
     margin-left: 13vw;
+    color: black;
 }
 footer button {
     background: transparent;
@@ -64,11 +117,15 @@ footer button:focus {
 .footer-btn1 {
     color: #1877f2;
     margin-left: 30vw;
-    font-size: 140%;
+    font-size: 35px;
 }
 .footer-btn2 {
     color:  #007bb5;
-    font-size: 140%;
+    font-size: 35px;
+}
+.footer-btn3 {
+    
+    font-size: 25px;
 }
 
  /*****vertical dots*******/

@@ -14,7 +14,7 @@ import AniLink from "gatsby-plugin-transition-link/AniLink";
 import Slider from "react-slick";
 import gplay from "../../images/gplay01.png"
 import appstore from "../../images/appstore01.png"
-import wwweb from "../../images/wwweb00.png"
+import wwweb from "../../images/http01.png"
 
 export default class serviceC extends Component {
   constructor(props) {

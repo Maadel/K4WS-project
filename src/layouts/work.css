@@ -26,14 +26,16 @@ work-filter {
 .work-img {
     max-width: 100%;
     max-height: 100%;
-    opacity: 0.8;
+    
+    filter: brightness(80%);
     transition: ease 0.5s all;
     
     
 }
 .work-img:hover{
+    filter: brightness(100%);
     transform: scale(1.2);
-    opacity: 1;
+    
     transition: all 0.5s ease;
 
 }
@@ -389,7 +391,7 @@ work-filter {
 }
 .web-btn {
     
-    width: calc(11vw + 3em) !important;
+    width: calc(7vw + 1em) !important;
 }
 
 
@@ -398,6 +400,9 @@ work-filter {
 @media  (orientation: landscape) {
     .info-bg-m {
         display: none;
+    }
+    .web-box .web-btn-m {
+        display:none;
     }
 }
 
@@ -436,7 +441,10 @@ work-filter {
         
     }
     .work-btn {
-        margin-left: 9vh;
+        margin-left: 15vw;
+    }
+    .work-img {
+        filter: brightness(100%);
     }
 
     .work-img-box {
@@ -514,7 +522,7 @@ work-filter {
     .order-box {
         position: absolute;
         margin-left: 40%;
-        margin-top: 17%;
+        margin-top: 35%;
     }
     
     .order-now-btn {
@@ -539,8 +547,9 @@ work-filter {
 
       .app-box{
         margin-right: 0%;
-        bottom: 7em;
-        left: 60%;
+        bottom: 6em;
+        left: 66%;
+        width: 30%;
         margin-top: 0%;
         position: absolute;
         
@@ -548,12 +557,15 @@ work-filter {
     .app-btn {
         background-color: transparent;
         border: none;
-        margin-right: 9%;
+        margin-right: 0%;
         
     }
     
     .app-btn:focus{
         outline: none;
+    }
+    .app-btn {
+        display: block;
     }
     
     
@@ -564,7 +576,7 @@ work-filter {
     .app-btn img {
         max-width: 100%;
         max-height: 100%;
-        opacity: 0.8;
+        opacity: 1;
         transition: none;
         
         
@@ -583,16 +595,40 @@ work-filter {
         
     }
     .web-box {
-        margin-right: 10% !important;
-        margin-top: 28% !important;
+        margin-right: 0% !important;
+        margin-top: 0% !important;
         left: 65%;
-        bottom: 8em;
+        bottom: 11em;
+        
         
     }
     .web-btn {
         
         width: 22vw !important;
     }
+
+   
+
+    .web-btn-m {
+        border-radius: 50px;
+        font-size: 15px;
+        margin-right: 40%;
+        height: 12%;
+        width: 25vw;
+        padding: 3px 10px 3px 5px;
+        
+        font-weight: bold;
+        background:rgb(189, 255, 219);
+        color: rgb(29, 190, 169);
+        box-shadow:0.2em 0.2em 0.3em rgba(3, 3, 0.3, 0.29) ;
+        border: none;
+    }
+
+    .web-box .web-btn {
+        display:none;
+    }
+
+
 
 }
 

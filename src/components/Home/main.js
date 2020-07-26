@@ -78,7 +78,7 @@ export default class main extends Component {
             </div>
             <div className="main-text">
               <div className="main-text1">
-              <h1 className="glow2"> شركة خطاب</h1>
+              <h1 className=""> شركة خطاب</h1>
               <p>
               شركة خطاب ويب للبرمجيات شركة سعودية
 رسمية تخدم أكثر من 5000 عميل علي

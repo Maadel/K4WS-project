@@ -16,7 +16,7 @@
 
 .main-text {
     background-color: rgba(25, 212, 171, 0.11);
-    border-radius: 20px;
+    
     margin-top: -1.2vh;
    
     
@@ -299,7 +299,7 @@ footer button:focus {
     }
 
     .vertical-dots li.slick-active button:before {
-        border: 2px dotted rgb(43, 41, 41) ;
+        border: none;
     }
 
     .vertical-dots li button:before {

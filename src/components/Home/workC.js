@@ -231,6 +231,7 @@ export default class aboutC extends Component {
             
                   {/*<Img fluid={this.state.currentNode.image.fluid} className="work-info-image"/>*/}
                   </div>
+                  <div className="app-btns-box">
                   {appcheck === 'app' ? (
                       <div className="app-box">
                         <button className="app-btn"><div><img src={gplay} alt=""/></div></button>
@@ -239,9 +240,12 @@ export default class aboutC extends Component {
                    ) : (
                     <div className="app-box web-box">
                     <button className="app-btn"><div className="web-btn"><img src={wwweb} alt=""/></div></button>
+                    <button className="web-btn-m"> زيارة الموقع</button>
                     </div>
+                    
                     )
                   }
+                  </div>
               
                 </div>
               </div>

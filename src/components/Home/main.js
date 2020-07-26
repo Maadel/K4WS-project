@@ -37,11 +37,11 @@ export default class main extends Component {
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
-      adaptiveHeight: true,
+      
       arrows: true,
       pauseOnHover: false,
       pauseOnDotsHover: true,
-      LazyLoad: true,
+      
       dotsClass:"vertical-dots"
     }
     return (
@@ -58,6 +58,7 @@ export default class main extends Component {
                 <FaBars />
               </button>
             </div>
+            <div className="main-box">
             <div className="slider-box">
               <Slider {...settings}>
                 <div>
@@ -111,6 +112,7 @@ export default class main extends Component {
 
             
 
+            </div>
             </div>
             <footer>
               <div className="row">

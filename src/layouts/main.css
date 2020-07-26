@@ -15,15 +15,14 @@
 
 
 .main-text {
-    background-color: rgba(25, 212, 171, 0.11);
     
-    margin-top: -1.2vh;
-   
+    border-top: 2px solid rgb(95, 109, 104);
+    margin-top: -1.5vh;
+    background: url("../images/nav01.jpg");
+    
     
     width: 100%;
-    overflow: hidden;
-    overflow-y: scroll;
-    
+
     height: 65vh;
     position: relative;
     
@@ -85,7 +84,7 @@
     color: white;
     width: 100px;
     border-radius: 50px;
-    background-color: rgba(38, 189, 169, 0.829);
+    background-color: rgb(38, 189, 169);
     box-shadow: 2px 2px 5px rgba(58, 55, 55, 0.507);
     font-weight: bold;
     
@@ -109,14 +108,16 @@
 }
 
 .main-text3 {
-    
+    background: url("../images/nav01.jpg");
     text-align: right;
+    margin-top: -10vh;
     padding: 10% 1%;
+    
    
     
 }
 .main-text3 ul {
-    margin-top: 8%;
+    margin-top: 12vh;
     font-size: 12px;
     margin-left: 10vw;
     
@@ -127,10 +128,11 @@
 
 .main-text3 p {
     width: 45%;
+    margin-top: 8vh;
     font-size: 22px;
     margin-left: 10vw;
     line-height: 150%;
-    padding-bottom: 8vh;
+    padding-bottom: 15vh;
 }
 
 
@@ -305,6 +307,11 @@ footer button:focus {
     .vertical-dots li button:before {
         width: 15px;
         height: 15px;
+    }
+
+    .main-box {
+        overflow: hidden;
+        overflow-y: scroll;
     }
 
 

@@ -15,16 +15,5 @@ const IndexPage = ({ data }) => (
  
 )
 
-export const query = graphql`
-  {
-    imgOne: file(relativePath: { eq: "main4.png" }) {
-      childImageSharp {
-        fluid(quality:100) {
-          ...GatsbyImageSharpFluid_tracedSVG
-        }
-      }
-    }
-  }
-`
 
 export default IndexPage

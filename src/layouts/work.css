@@ -204,6 +204,8 @@ work-filter {
     width: 100%;
     text-align: right;
     z-index: 21;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(21, 192, 149, 0.568) rgba(11, 204, 140, 0.151);
 }
 .work-info-bg img {
     width: 100%;
@@ -598,7 +600,7 @@ work-filter {
         margin-right: 0% !important;
         margin-top: 0% !important;
         left: 65%;
-        bottom: 11em;
+        bottom: 9em;
         
         
     }

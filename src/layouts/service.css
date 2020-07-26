@@ -630,7 +630,7 @@
     text-align: right;
     z-index: 21;
     scrollbar-width: thin;
-    scrollbar-color: rgb(206, 200, 200) rgba(11, 204, 140, 0.185);
+    scrollbar-color: rgba(21, 192, 149, 0.568) rgba(11, 204, 140, 0.151);
     line-height: 30px;
     
 }
@@ -760,6 +760,10 @@ info4-container {
 .padding-filler {
   height: 40vh;
   
+}
+
+.service-info-bg img {
+  opacity: 1;
 }
 
 }

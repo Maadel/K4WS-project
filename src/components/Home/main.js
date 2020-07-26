@@ -60,22 +60,7 @@ export default class main extends Component {
             </div>
             <div className="main-box">
             <div className="slider-box">
-              <Slider {...settings}>
-                <div>
-                
-                  <img src={mainBG} className="img-fluid w-100" alt=""/>
-                </div>
-                <div>
-                <img src={carousel2} className="img-fluid w-100" alt=""/>
-                </div>
-                <div>
-                <img src={carousel3} className="img-fluid w-100" alt=""/>
-                </div>
-                <div>
-                <img src={carousel4} className="img-fluid w-100" alt=""/>
-                </div>
-                
-              </Slider>
+           
             </div>
             <div className="main-text">
               <div className="main-text1">

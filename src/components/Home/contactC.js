@@ -77,6 +77,7 @@ export default class contactC extends Component {
                     <input type="submit" value="إرسال"/>
                     
                   </form>
+                  <div className="padding-filler"></div>
  
                 </div>
               </div>

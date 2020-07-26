@@ -5,6 +5,7 @@ import { FaBars, FaTimes } from "react-icons/fa"
 import { Link } from "gatsby"
 import Img from "gatsby-image"
 import workInfoBG from "../../images/work-info01.jpg"
+import workInfoBGm from "../../images/work-info-m.jpg"
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 import Slider from "react-slick";
 import gplay from "../../images/gplay01.png"
@@ -99,7 +100,7 @@ export default class aboutC extends Component {
               <img src={klogo} alt="Logo"/>
             </Link>
             </div>
-            <div className="work-toggle-btn">
+            <div className="toggle-btn">
               <button onClick={this.navbarHandler}>
               <FaBars />
               </button>
@@ -190,7 +191,8 @@ export default class aboutC extends Component {
                   </button>
                 </div>
                 <div className="work-info-bg">
-                  <img src={workInfoBG} alt="Info Backgroud1"/>
+                  <img src={workInfoBG} alt="Info Backgroud1" className="info-bg1"/>
+                  <img src={workInfoBGm} alt="Info Backgroudm" className="info-bg-m"/>
                 </div>
                 <div className="work-info-container">
                   

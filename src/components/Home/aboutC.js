@@ -1,5 +1,7 @@
 import React, { Component } from "react"
 import aboutBG from "../../images/about01.jpg"
+import aboutImage1 from "../../images/about-image01.jpg"
+import aboutImage2 from "../../images/about-image02.jpg"
 import klogo from "../../images/logo-k4ws.png"
 import { FaBars } from "react-icons/fa"
 import { Link } from "gatsby"
@@ -52,6 +54,12 @@ export default class aboutC extends Component {
                     متكامل متخصص فى تصميم و تطوير مواقع الانترنت و التسويق<br/>
                     الإلكتروني
                   </p>
+                  <div className="about-img">
+                  <img src={aboutImage1} alt=" "/>
+                  </div>
+                  <div className="about-img-m">
+                  <img src={aboutImage2} alt=" "/>
+                  </div>
                   <p className="about-text-p2">
                     وانطلاقا من خبرتنا الطويلة و تنوع الاعمال التى قامت الشركة
                     بتنفيذها<br/> على مدار اكثر من خمس سنوات ، تكون لدى فريق العمل
@@ -61,6 +69,7 @@ export default class aboutC extends Component {
                     المشاريع من خلال الحلول<br/> الحديثة و الافكار التسويقية المتخصصة
                     و المبتكرة
                   </p>
+                  <div className="padding-filler"></div>
                 </div>
               </div>
             </div>

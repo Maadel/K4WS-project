@@ -264,7 +264,7 @@
 }
 
 .info2-container h1{
-    margin-top: 8vh;
+    margin-top: 13vh;
     margin-right: 18%;
     color: rgba(2, 148, 111, 0.849);
     display: block;
@@ -275,12 +275,12 @@
 }
 .info2-container p {
     text-align: right;
-    margin-left: 22%;
-    width: 60%;
+    margin-left: 27%;
+    width: 55%;
     margin-right: 18%;
     display: block;
     font-size: calc(50% + 1vw);
-    font-weight: bold;
+    
     
 }
 
@@ -362,18 +362,21 @@
     
 }
 .info4-container p {
+    
     display: block;
-    margin-right: 16%;
+    margin-left: 50%;
+    width: 35%;
     font-size: calc(50% + 1vw);
-    font-weight: bold;
+    
     line-height: 150%;
     
 }
 
 .info4-container p:nth-of-type(2) {
+  width: 40%;
     margin-top: 3em;
-    margin-right: 40%;
-    font-weight: bold;
+    margin-left: 10%;
+    
 }
 
 .info5-container {
@@ -544,6 +547,11 @@
 
 
 /************** MOBILE VIEW *****************/
+@media  (orientation: landscape) {
+  info4-img-m {
+    display: none;
+  }
+}
 
 @media  (orientation: portrait), (max-width: 500px) {
   .service-btn-box .btn-eclips {
@@ -627,23 +635,24 @@
     
 }
 
+
 .info2-container h1{
     margin-top: 15vh;
-    margin-right: 9%;
+    margin-right: 10%;
     color: rgba(2, 148, 111, 0.849);
     display: block;
     font-weight: bold;
     font-size: 24px;
-    margin-bottom: 5vh;
+    
     
 }
 .info2-container p {
     text-align: right;
-    margin-left: 30%;
-    width: 60%;
+    margin-left: 15%;
+    width: 75%;
     
     
-    font-size: 17px;
+    font-size: 15px;
     
     
 }
@@ -692,7 +701,63 @@
 .more-btn:hover {
   font-size: 18px;
 }
-.info-padding-filler {
+info4-container {
+  width: 90%;
+}
+.info4-container h1{
+  margin-top: 13vh;
+  margin-bottom: 1em;
+  margin-right: 16%;
+  color: rgba(2, 148, 111, 0.849);
+  display: block;
+  font-weight: bold;
+  font-size: 25px;
+  
+  
+}
+.info4-container p {
+  display: block;
+  
+  font-size: 15px;
+  
+  line-height: 170%;
+  width: 70%;
+  margin-left: 15%;
+  
+  
+}
+
+.info4-container p:nth-of-type(2) {
+  margin-top: 1em;
+  margin-left: 15%;
+  width: 70%;
+  
+}
+.info4-img {
+  display: none;
+}
+.info5-container h1{
+  margin-top: 13vh;
+  margin-right: 12%;
+  color: rgb(233, 223, 223);
+  display: block;
+  font-weight: bold;
+  font-size: calc(80% + 1.5vw);
+  margin-bottom: 3vh;
+  
+}
+.info5-container p {
+  width: 70%;
+  
+  margin-left: 18%;
+  display: block;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 150%;
+  
+}
+
+.padding-filler {
   height: 40vh;
   
 }

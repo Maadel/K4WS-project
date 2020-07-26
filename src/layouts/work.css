@@ -526,9 +526,9 @@ work-filter {
         margin-left: 85%;
         padding: 3px 10px 3px 5px;
         position: relative;
-        font-size: 18px;
-        
-        background:rgb(231, 226, 226);
+        font-size: 15px;
+        font-weight: bold;
+        background:rgb(189, 255, 219);
         color: rgb(29, 190, 169);
         box-shadow:0.2em 0.2em 0.3em rgba(3, 3, 0.3, 0.29) ;
         
@@ -539,7 +539,7 @@ work-filter {
 
       .app-box{
         margin-right: 0%;
-        bottom: 8em;
+        bottom: 7em;
         left: 60%;
         margin-top: 0%;
         position: absolute;
@@ -548,7 +548,7 @@ work-filter {
     .app-btn {
         background-color: transparent;
         border: none;
-        margin-right: 2%;
+        margin-right: 9%;
         
     }
     
@@ -558,7 +558,7 @@ work-filter {
     
     
     .app-btn div {
-        width: 20vw;
+        width: 23vw;
         margin-bottom: 5%;
     }
     .app-btn img {
@@ -583,13 +583,15 @@ work-filter {
         
     }
     .web-box {
-        margin-right: 17% !important;
+        margin-right: 10% !important;
         margin-top: 28% !important;
-        bottom: 9em;
+        left: 65%;
+        bottom: 8em;
+        
     }
     .web-btn {
         
-        width: 35vw !important;
+        width: 22vw !important;
     }
 
 }

@@ -87,6 +87,7 @@
     border-radius: 50px;
     background-color: rgba(38, 189, 169, 0.829);
     box-shadow: 2px 2px 5px rgba(58, 55, 55, 0.507);
+    font-weight: bold;
     
 }
 
@@ -96,6 +97,7 @@
     border-radius: 50px;
     background-color: #bbe9d7;
     box-shadow: 2px 2px 5px rgba(58, 55, 55, 0.507);
+    font-weight: bold;
 }
 
 .main-text2 p {
@@ -178,6 +180,7 @@ footer button:focus {
 .footer-btn3 {
     color:#06c28a;
     font-size: 20px;
+    font-weight: lighter;
 }
 
  /*****vertical dots*******/

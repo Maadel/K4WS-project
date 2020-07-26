@@ -10,7 +10,7 @@ import AniLink from "gatsby-plugin-transition-link/AniLink";
 import Slider from "react-slick";
 import gplay from "../../images/gplay01.png"
 import appstore from "../../images/appstore01.png"
-import wwweb from "../../images/http01.png"
+import wwweb from "../../images/wwweb08.png"
 //import { node } from "prop-types"
 
 const getCategories = items => {

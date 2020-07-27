@@ -6,6 +6,7 @@
   margin-right: 2vw;
   z-index: 999;
   
+  
 }
 
 
@@ -92,6 +93,7 @@
 
 
 
+
   .whatsapp-btn {
     position: fixed;
     width: 8vw;
@@ -121,13 +123,18 @@
 }
 
 /************** MOBILE VIEW *****************/
+@media  (orientation: landscape) {
+  .nav-list-m {
+    display: none;
+  }
+}
 
 @media  (orientation: portrait), (max-width: 500px) {
   .whatsapp-btn {
     position: fixed;
-    width: 22vw;
+    width: 20vw;
     height: auto;
-    left:1%;
+    left:80%;
     top:87%;
     transition: all 1s ease;
     z-index: 999;
@@ -142,10 +149,11 @@
   z-index: 999;
   
   
+  
 }
 .btn-list li {
   float: left;
-  margin-right: 3vw;
+  margin-left: 3vw;
 }
 
 .btn-nav {
@@ -172,5 +180,8 @@
 }
 .btn-margin {
   margin-right: 0;
+}
+.nav-list {
+  display: none;
 }
 }

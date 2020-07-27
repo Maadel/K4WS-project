@@ -691,10 +691,10 @@
  
   height: 6vh;
   width: 28vw;
-  margin-top: 5vh;
+  margin-top: 9vh;
   margin-left: 10vw;
   margin-right: -17vw;
-  
+  color: #06c28a;
   font-size: 20px;
 
 }
@@ -764,6 +764,10 @@ info4-container {
 
 .service-info-bg img {
   opacity: 1;
+}
+
+.service-close-btn button {
+  margin-left: 90%;
 }
 
 }

@@ -94,7 +94,7 @@
     width: 100px;
     color: #049b75;
     border-radius: 50px;
-    background-color: #bbe9d7;
+    background-color: #cfebe0;
     box-shadow: 2px 2px 5px rgba(58, 55, 55, 0.507);
     font-weight: bold;
 }
@@ -109,10 +109,11 @@
 
 .main-text3 {
     background: url("../images/nav01.jpg");
+    background-position: center;
     text-align: right;
     margin-top: -10vh;
     padding: 10% 1%;
-    
+    padding-bottom: 25vh;
    
     
 }
@@ -132,7 +133,7 @@
     font-size: 22px;
     margin-left: 10vw;
     line-height: 150%;
-    padding-bottom: 15vh;
+    
 }
 
 

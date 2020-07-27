@@ -130,8 +130,8 @@ h1,h2,h3,h4,h5,h6 {
     width: auto;
 }
 .toggle-btn {
-    left: 93%;
-    
+    left: 90%;
+    display: flex;
     margin-top: 5vh;
     
     position: absolute;
@@ -143,7 +143,7 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 30px;
     color: rgb(85, 77, 77);
     position: relative;
-    margin-right: 20vh;
+    margin-left: 20%;
     z-index: 99;
     padding: 1px !important;
     background-color: transparent;
@@ -188,6 +188,20 @@ h1,h2,h3,h4,h5,h6 {
   
 
     
+}
+
+
+.map-box {
+  background-color: white;
+  position: absolute;
+  top: 18%;
+  right: 10%;
+  z-index: 99;
+  width: 40%;
+  height: 60%;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 3px solid rgb(22, 163, 104);
 }
 
 
@@ -363,11 +377,24 @@ body {
 
 .toggle-btn {
   margin-top: 2vh;
-  left: 85%;
+  left: 78%;
 }
 
 .toggle-btn button {
   font-size: 25px;
+}
+
+.map-box {
+  background-color: white;
+  position: absolute;
+  top: 4em;
+  right: 10%;
+  z-index: 99;
+  width: 80%;
+  height: 60%;
+  
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 

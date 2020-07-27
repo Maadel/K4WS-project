@@ -34,7 +34,7 @@ export default function Navbar() {
         </div>
       <div className="right-btns inner col-12">
         <div className="col-2"> </div>
-        <ul className="btn-list">
+        <ul className="btn-list nav-list">
           <li>
             <AniLink fade to="/">
             <button className="btn-nav"> <img src={iconHome} alt=""/>الرئيسية</button>
@@ -76,6 +76,41 @@ export default function Navbar() {
             <button className="btn-nav"><img src={iconCall} alt=""/> اتصل بنا</button>
             </AniLink>
           </li>
+        </ul>
+        <ul className="btn-list nav-list-m">
+        <li>
+            <AniLink fade to="/contact">
+            <button className="btn-nav"><img src={iconCall} alt=""/> اتصل بنا</button>
+            </AniLink>
+          </li>
+          <li>
+            <AniLink fade to="/about">
+            <button className="btn-nav btn-margin"><img src={iconWho} alt=""/> من نحن </button>
+            </AniLink>
+          </li>
+          <li>
+            <AniLink fade to="/work">
+            <button className="btn-nav"><img src={iconWork} alt=""/> اعمالـنا</button>
+            </AniLink>
+          </li>
+        <li>
+            <AniLink fade to="/service">
+            <button className="btn-nav btn-margin"><img src={iconServ} alt=""/> خدماتـنا</button>
+            </AniLink>
+          </li>
+          <li>
+            <AniLink fade to="/">
+            <button className="btn-nav"> <img src={iconHome} alt=""/>الرئيسية</button>
+            </AniLink>
+          </li>
+        
+       
+       
+    
+      
+        
+      
+       
         </ul>
         </div>
         

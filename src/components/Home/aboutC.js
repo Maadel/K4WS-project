@@ -3,9 +3,19 @@ import aboutBG from "../../images/about01.jpg"
 import aboutImage1 from "../../images/about-image01.jpg"
 import aboutImage2 from "../../images/about-image02.jpg"
 import klogo from "../../images/logo-k4ws.png"
-import { FaBars } from "react-icons/fa"
+import { FaBars,FaMapMarkerAlt} from "react-icons/fa"
 import { Link } from "gatsby"
+import { withScriptjs, withGoogleMap, GoogleMap, Marker } from "react-google-maps"
 
+
+function Map() {
+  return <GoogleMap
+    defaultZoom={8}
+    defaultCenter={{ lat: -34.397, lng: 150.644 }}
+  />;
+}
+
+const WrappedMap =withScriptjs(withGoogleMap(Map));
 
 export default class aboutC extends Component {
   constructor(props) {
@@ -13,6 +23,8 @@ export default class aboutC extends Component {
     this.state = {
       navbarOpen: false,
       css: "hero-min col-12 col-md-10",
+      mapOpen:false,
+      mapSwitch:"map-box d-none"
     }
   }
 
@@ -22,6 +34,14 @@ export default class aboutC extends Component {
       : this.setState({
           navbarOpen: true,
           css: "hero-full col-12",
+        })
+  }
+  mapHandler = () => {
+    this.state.mapOpen
+      ? this.setState({ mapOpen: false, mapSwitch: "map-box d-none" })
+      : this.setState({
+          mapOpen: true,
+          mapSwitch: "map-box d-block",
         })
   }
   render() {
@@ -34,10 +54,15 @@ export default class aboutC extends Component {
               <img src={klogo} alt="Logo"/>
             </Link>
             </div>
+
             <div className="toggle-btn">
+            <button onClick={this.mapHandler}>
+              <FaMapMarkerAlt />
+              </button>
               <button onClick={this.navbarHandler}>
               <FaBars />
               </button>
+            
             </div>
             <div>
               <div className="hero-bg">
@@ -70,6 +95,14 @@ export default class aboutC extends Component {
                     و المبتكرة
                   </p>
                   <div className="padding-filler"></div>
+                </div>
+                <div className={this.state.mapSwitch}>
+                  <WrappedMap
+                    googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsGwp19k_0lr31Hnyos-OPLdJ9FwTO6k4&v=3.exp&libraries=geometry,drawing,places"
+                    loadingElement={<div style={{ height: `100%` }} />}
+                    containerElement={<div style={{ height: `100%` }} />}
+                    mapElement={<div style={{ height: `100%` }} />}
+                    />
                 </div>
               </div>
             </div>

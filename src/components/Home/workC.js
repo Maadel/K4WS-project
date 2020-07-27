@@ -113,7 +113,7 @@ export default class aboutC extends Component {
                 <div className={this.state.workBtnsCss}>
                   {/*categories */}
                   <div className="row mb-5">
-                    <div className="col-10 mx-auto text-center">
+                    <div className="col-10 mx-auto text-center filter-box">
                       {this.state.categories.map((category, index) => {
                         return (<button type="button"
                          key={index}
@@ -124,6 +124,7 @@ export default class aboutC extends Component {
                   </div>
                   {/*items */}
                   <div className="row">
+                    
                     {this.state.workItems.map(({node}, i) => {
                       return(
                         <button key={node.id} className="col-10 col-md-5 work-btn"
@@ -231,7 +232,7 @@ export default class aboutC extends Component {
             
                   {/*<Img fluid={this.state.currentNode.image.fluid} className="work-info-image"/>*/}
                   </div>
-                  <div className="app-btns-box">
+                  
                   {appcheck === 'app' ? (
                       <div className="app-box">
                         <button className="app-btn"><div><img src={gplay} alt=""/></div></button>
@@ -245,7 +246,7 @@ export default class aboutC extends Component {
                     
                     )
                   }
-                  </div>
+                  
               
                 </div>
               </div>

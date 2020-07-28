@@ -5,14 +5,18 @@ import aboutImage2 from "../../images/about-image02.jpg"
 import klogo from "../../images/logo-k4ws.png"
 import { FaBars,FaMapMarkerAlt} from "react-icons/fa"
 import { Link } from "gatsby"
-import { withScriptjs, withGoogleMap, GoogleMap, Marker } from "react-google-maps"
+import { withScriptjs, withGoogleMap, GoogleMap, Marker} from "react-google-maps"
 
 
 function Map() {
   return <GoogleMap
-    defaultZoom={8}
-    defaultCenter={{ lat: -34.397, lng: 150.644 }}
-  />;
+    defaultZoom={18}
+    defaultCenter={{ lat:  31.04520, lng:  31.394776 }}
+  > 
+  <Marker position={{lat: 31.045200, lng:  31.394600}}/>
+  
+  
+  </GoogleMap> ;
 }
 
 const WrappedMap =withScriptjs(withGoogleMap(Map));

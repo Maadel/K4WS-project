@@ -16,6 +16,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 
 
+
 const Layout = ({ children , location }) => 
 <>
 <Navbar/>

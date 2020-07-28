@@ -18,6 +18,12 @@ module.exports = {
       },
       
       
+    },{
+      resolve: `gatsby-plugin-tawk.to`,
+      options: {
+        tawkId: "56e7e240e076c43a261b9dbb",
+        // get this from the tawk script widget
+      },
     },
     {
       resolve: `gatsby-source-contentful`,

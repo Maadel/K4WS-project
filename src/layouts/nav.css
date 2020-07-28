@@ -96,10 +96,10 @@
 
   .whatsapp-btn {
     position: fixed;
-    width: 8vw;
+    width: 85px;
     height: auto;
-    left:85%;
-    top:82%;
+    right:5%;
+    bottom: 1%;
     transition: all 1s ease;
     z-index: 999;
     opacity: 1;
@@ -109,13 +109,10 @@
 .whatsapp-btn img {
     max-width: 100%;
     max-height: 100%;
-    border-radius: 100px;
+    
 }
 
-.whatsapp-btn:hover {
-    width: 9vw;
-    transition: ease 0.5s all;
-}
+
 
 .whatsapp-btn:active {
     width: 8.3vw;
@@ -132,10 +129,10 @@
 @media  (orientation: portrait), (max-width: 500px) {
   .whatsapp-btn {
     position: fixed;
-    width: 20vw;
+    width: 85px;
     height: auto;
-    left:80%;
-    top:87%;
+    right:-1%;
+    bottom:13%;
     transition: all 1s ease;
     z-index: 999;
     opacity: 1;

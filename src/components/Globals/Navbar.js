@@ -15,7 +15,7 @@ import iconServ from "../../images/icon-serv.png"
 import iconWork from "../../images/icon-work.png"
 import iconWho from "../../images/icon-who.png"
 import iconCall from "../../images/icon-call.png"
-import whatsappIcon from "../../images/whatsapp-logo2.png"
+import whatsappIcon from "../../images/whatsapp-logo3.png"
 
 
 

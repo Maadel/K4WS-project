@@ -60,7 +60,7 @@ export default class aboutC extends Component {
             </div>
 
             <div className="toggle-btn">
-            <button onClick={this.mapHandler}>
+              <button onClick={this.mapHandler}>
               <FaMapMarkerAlt />
               </button>
               <button onClick={this.navbarHandler}>

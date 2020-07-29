@@ -5,11 +5,26 @@ import carousel3 from "../../images/contact01.jpg"
 import carousel4 from "../../images/service01.jpg"
 
 import klogo from "../../images/logo-k4ws.png"
-import { FaBars, FaFacebook, FaLinkedin } from "react-icons/fa"
+import { FaBars, FaFacebook, FaLinkedin, FaMapMarkerAlt} from "react-icons/fa"
 import { MdPhoneIphone} from "react-icons/md"
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 import { Link } from "gatsby"
 import Slider from "react-slick"
+import { withScriptjs, withGoogleMap, GoogleMap, Marker} from "react-google-maps"
+
+
+function Map() {
+  return <GoogleMap
+    defaultZoom={18}
+    defaultCenter={{ lat:  31.04520, lng:  31.394776 }}
+  > 
+  <Marker position={{lat: 31.045200, lng:  31.394600}}/>
+  
+  
+  </GoogleMap> ;
+}
+
+const WrappedMap =withScriptjs(withGoogleMap(Map));
 
 
 export default class main extends Component {
@@ -27,6 +42,14 @@ export default class main extends Component {
       : this.setState({
           navbarOpen: true,
           css: "hero-min col-12 col-md-10",
+        })
+  }
+  mapHandler = () => {
+    this.state.mapOpen
+      ? this.setState({ mapOpen: false, mapSwitch: "map-box d-none" })
+      : this.setState({
+          mapOpen: true,
+          mapSwitch: "map-box d-block",
         })
   }
   render() {
@@ -54,6 +77,9 @@ export default class main extends Component {
               </Link>
             </div>
             <div className="toggle-btn">
+            <button onClick={this.mapHandler}>
+              <FaMapMarkerAlt />
+              </button>
               <button onClick={this.navbarHandler}>
                 <FaBars />
               </button>
@@ -113,6 +139,14 @@ export default class main extends Component {
             
 
             </div>
+            <div className={this.state.mapSwitch}>
+                  <WrappedMap
+                    googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsGwp19k_0lr31Hnyos-OPLdJ9FwTO6k4&v=3.exp&libraries=geometry,drawing,places"
+                    loadingElement={<div style={{ height: `100%` }} />}
+                    containerElement={<div style={{ height: `100%` }} />}
+                    mapElement={<div style={{ height: `100%` }} />}
+                    />
+                </div>
             </div>
             <footer>
               <div className="row">

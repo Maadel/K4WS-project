@@ -98,7 +98,7 @@
     position: fixed;
     width: 85px;
     height: auto;
-    right:5%;
+    right:90px;
     bottom: 1%;
     transition: all 1s ease;
     z-index: 999;
@@ -131,8 +131,8 @@
     position: fixed;
     width: 85px;
     height: auto;
-    right:-1%;
-    bottom:13%;
+    right:1%;
+    bottom:90px;
     transition: all 1s ease;
     z-index: 999;
     opacity: 1;

@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 //import workBG from "../../images/work-bg.png"
 import klogo from "../../images/logo-k4ws.png"
-import { FaBars, FaTimes } from "react-icons/fa"
+import { FaBars, FaTimes, FaMapMarkerAlt } from "react-icons/fa"
 import { Link } from "gatsby"
 import Img from "gatsby-image"
 import workInfoBG from "../../images/work-info01.jpg"
@@ -12,6 +12,21 @@ import gplay from "../../images/gplay01.png"
 import appstore from "../../images/appstore01.png"
 import wwweb from "../../images/wwweb08.png"
 //import { node } from "prop-types"
+import { withScriptjs, withGoogleMap, GoogleMap, Marker} from "react-google-maps"
+
+
+function Map() {
+  return <GoogleMap
+    defaultZoom={18}
+    defaultCenter={{ lat:  31.04520, lng:  31.394776 }}
+  > 
+  <Marker position={{lat: 31.045200, lng:  31.394600}}/>
+  
+  
+  </GoogleMap> ;
+}
+
+const WrappedMap =withScriptjs(withGoogleMap(Map));
 
 const getCategories = items => {
   let tempItems = items.map(items => {
@@ -74,6 +89,14 @@ export default class aboutC extends Component {
           css: "work-hero-full col-12",
         })
   }
+  mapHandler = () => {
+    this.state.mapOpen
+      ? this.setState({ mapOpen: false, mapSwitch: "map-box d-none" })
+      : this.setState({
+          mapOpen: true,
+          mapSwitch: "map-box d-block",
+        })
+  }
   render() {
     const appcheck = this.state.currentNode.category;
     var settings = {
@@ -101,6 +124,9 @@ export default class aboutC extends Component {
             </Link>
             </div>
             <div className="toggle-btn">
+            <button onClick={this.mapHandler}>
+              <FaMapMarkerAlt />
+              </button>
               <button onClick={this.navbarHandler}>
               <FaBars />
               </button>
@@ -140,6 +166,14 @@ export default class aboutC extends Component {
                   </div>
 
                 
+                </div>
+                <div className={this.state.mapSwitch}>
+                  <WrappedMap
+                    googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsGwp19k_0lr31Hnyos-OPLdJ9FwTO6k4&v=3.exp&libraries=geometry,drawing,places"
+                    loadingElement={<div style={{ height: `100%` }} />}
+                    containerElement={<div style={{ height: `100%` }} />}
+                    mapElement={<div style={{ height: `100%` }} />}
+                    />
                 </div>
               </div>
             </div>

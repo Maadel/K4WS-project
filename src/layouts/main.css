@@ -141,7 +141,7 @@ footer {
     background:url("../images/footer-bg003.jpg") ;
     
     text-align: center;
-    height: 7%;
+    height: 8%;
     width: 100%;
     position: fixed;
     bottom: 0;
@@ -149,20 +149,24 @@ footer {
     border-top-right-radius: 50px ;
     border-top-left-radius: 50px ;
     z-index: 70;
-    padding: 2px;
+    
   
 }
+
 footer p {
+    display: block;
     font-size: 9px;
-    margin-left: 5vw;
+    margin-left: -10%;
     color: #06c28a;
-    margin-top: -1.3vh;
+    margin-top: -7px;
+    
     
 }
 footer button {
     background: transparent;
     border: none;
-    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 5px;
     
     
 }
@@ -173,7 +177,7 @@ footer button:focus {
 
 .footer-btn1 {
     color: #1877f2;
-    margin-left: 30vw;
+    margin-left: 22vw;
     font-size: 20px;
 }
 .footer-btn2 {

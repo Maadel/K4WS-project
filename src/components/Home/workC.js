@@ -6,6 +6,7 @@ import { Link } from "gatsby"
 import Img from "gatsby-image"
 import workInfoBG from "../../images/work-info01.jpg"
 import workInfoBGm from "../../images/work-info-m.jpg"
+import workBG from "../../images/work01.jpg"
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 import Slider from "react-slick";
 import gplay from "../../images/gplay01.png"
@@ -42,7 +43,7 @@ export default class aboutC extends Component {
     super(props)
     this.state = {
       navbarOpen: false,
-      css: "work-hero-min col-12 col-md-10",
+      css: "hero-min col-12 col-md-10",
       items:props.items.edges,
       workItems:props.items.edges,
       categories: getCategories(props.items.edges),
@@ -83,10 +84,10 @@ export default class aboutC extends Component {
 
   navbarHandler = () => {
     this.state.navbarOpen
-      ? this.setState({ navbarOpen: false, css: "work-hero-min col-12 col-md-10" })
+      ? this.setState({ navbarOpen: false, css: "hero-min col-12 col-md-10" })
       : this.setState({
           navbarOpen: true,
-          css: "work-hero-full col-12",
+          css: "hero-full col-12",
         })
   }
   mapHandler = () => {
@@ -123,7 +124,7 @@ export default class aboutC extends Component {
               <img src={klogo} alt="Logo"/>
             </Link>
             </div>
-            <div className="toggle-btn">
+            <div className="toggle-btn fixed-top">
             <button onClick={this.mapHandler}>
               <FaMapMarkerAlt />
               </button>
@@ -133,10 +134,12 @@ export default class aboutC extends Component {
             </div>
             <div>
               <div className="hero-bg">
+              <img src={workBG} alt="work Background" className="contact-bg"/>
                 {/*<img src={workBG} alt="Work Backgroud"/>*/}
 
 
                 <div className={this.state.workBtnsCss}>
+                  <div className="work-box">
                   {/*categories */}
                   <div className="row mb-5">
                     <div className="col-10 mx-auto text-center filter-box">
@@ -149,6 +152,7 @@ export default class aboutC extends Component {
                     </div>
                   </div>
                   {/*items */}
+                  <div className="work-btns-box">
                   <div className="row">
                     
                     {this.state.workItems.map(({node}, i) => {
@@ -164,8 +168,10 @@ export default class aboutC extends Component {
 
                     })}
                   </div>
-
-                
+                  <div className="pad-fill"></div>
+                  </div>
+                  </div>
+                    
                 </div>
                 <div className={this.state.mapSwitch}>
                   <WrappedMap

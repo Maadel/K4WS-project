@@ -319,6 +319,7 @@ footer button:focus {
     }
 
     .main-box {
+        
         overflow: hidden;
         overflow-y: scroll;
     }

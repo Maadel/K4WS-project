@@ -119,7 +119,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 .logo-k4ws {
     left: 5%;
-    margin-top: 4vh;
+    margin-top: 3vh;
     position: absolute;
     z-index: 50;
     transition: ease 0.9s all;
@@ -129,7 +129,7 @@ h1,h2,h3,h4,h5,h6 {
     
 }
 .logo-k4ws img {
-    height: calc(1em + 8vh);
+    height: calc(0.5em + 4vh);
     width: auto;
 }
 .toggle-btn {
@@ -364,7 +364,7 @@ to   { opacity: 1;  margin-right: 0em;}
   }
 
   .logo-k4ws img {
-    height: 7vh;
+    height: 5vh;
     width: auto;
 }
 body {

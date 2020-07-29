@@ -9,6 +9,8 @@
     position: absolute;
     scrollbar-width: thin;
     scrollbar-color: rgba(21, 192, 149, 0.568) rgba(11, 204, 140, 0.137);
+    margin-top: 7%;
+    padding-bottom: 20vh;
 
 }
 .contact-text h1{
@@ -62,7 +64,7 @@ form input[type=text], [type=email] {
 form input[type=submit] {
     
     margin-top: 2%;
-    margin-bottom: 5%;
+    margin-bottom: 20%;
     height: calc(1vh + 1.5em + 5px);
     width: calc(7vh + 5em);
     display: block;
@@ -76,6 +78,7 @@ form input[type=submit] {
     border: none;
     border-radius: 50px;
     cursor: pointer;
+    
   }
   form input[type=submit]:hover {
     background-color: rgb(37, 175, 141);
@@ -153,9 +156,12 @@ form input[type=submit] {
 form label {
     font-size: 20px ;
 }
+.contact-text {
+    margin-top: 12%;
+}
 
 .contact-text h1 {
-    margin-top: 16%;
+    margin-top: 4%;
     
     font-size: 35px;
 }

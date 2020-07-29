@@ -521,11 +521,11 @@
         height: auto;
         max-height: 50%;
         margin-left: 1%;
-        margin-top: 25%;
+        margin-top: 22%;
         
         text-align: right;
         z-index: 7;
-        position: relative;
+        position: absolute;
         object-fit: contain;
         
     }
@@ -558,11 +558,12 @@
 
       .app-box{
         margin-right: 0%;
-        bottom: 3em;
-        left: 68%;
+        top: 40vh;
+        left: 65%;
         width: 30%;
         margin-top: 0%;
-        position: absolute;
+        position: relative;
+        line-height: 25px;
         
     }
     .app-btn {
@@ -593,7 +594,7 @@
         
     }
     .app-btn img:hover{
-        transform: scale(0.8);
+        transform: scale(1);
         opacity: 1;
         transition: all 0.5s ease;
         
@@ -608,8 +609,8 @@
     .web-box {
         margin-right: 0% !important;
         margin-top: 0% !important;
-        left: 64%;
-        bottom: 6em;
+        left: 68.5%;
+        top: 33vh;
         
         
         
@@ -626,7 +627,7 @@
         font-size: 15px;
         margin-right: 0%;
         height: 12%;
-        width: 25vw;
+        width: 26vw;
         padding: 3px 10px 3px 5px;
         
         font-weight: bold;

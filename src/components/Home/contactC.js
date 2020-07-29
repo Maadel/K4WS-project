@@ -1,7 +1,9 @@
 import React, { Component } from "react"
 import contactBG from "../../images/contact01.jpg"
+import contactBGm from "../../images/contact-m.jpg"
 import klogo from "../../images/logo-k4ws.png"
-import { FaBars, FaMapMarkerAlt } from "react-icons/fa"
+import { FaBars, FaMapMarkerAlt, FaGoogle, FaFacebook } from "react-icons/fa"
+import { MdPhoneIphone } from "react-icons/md"
 import { Link } from "gatsby"
 import { withScriptjs, withGoogleMap, GoogleMap, Marker} from "react-google-maps"
 
@@ -64,10 +66,27 @@ export default class contactC extends Component {
             </div>
             <div>
               <div className="hero-bg">
-                <img src={contactBG} alt="Contact Background"/>
+                <img src={contactBG} alt="Contact Background" className="contact-bg"/>
+                <img src={contactBGm} alt="Contact Background" className="contact-bg-m"/>
 
                 <div className="contact-text fadeinn">
                   <h1>اتصل بنا</h1>
+                    <div className="phone-box">
+                      <button className="">
+                      <MdPhoneIphone />:
+                      <a href="tel:0548252956">0548252956</a>
+                      </button>
+
+                      <button className="">
+                      <FaGoogle style={{color: "#ea4335"}}/> : 
+                        <a href="mailto:kw4s.com@gmail.com">kw4s.com@gmail.com</a>
+                      </button>
+                    
+                      <button className="">
+                      <FaFacebook style={{color: "#1877f2"}}/> :
+                      <a href="https://www.facebook.com/khatabweb">facebook/khatabweb</a>
+                      </button>
+                    </div>
 
                   <form action="https://formspree.io/5min4coffee@gmail.com" method="POST">
                     <label  htmlFor="name">الإسم</label>

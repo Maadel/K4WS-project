@@ -5,7 +5,7 @@ import carousel3 from "../../images/contact01.jpg"
 import carousel4 from "../../images/service01.jpg"
 
 import klogo from "../../images/logo-k4ws.png"
-import { FaBars, FaFacebook, FaLinkedin, FaMapMarkerAlt} from "react-icons/fa"
+import { FaBars, FaFacebook, FaGoogle, FaMapMarkerAlt} from "react-icons/fa"
 import { MdPhoneIphone} from "react-icons/md"
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 import { Link } from "gatsby"
@@ -131,7 +131,7 @@ export default class main extends Component {
                 <li><AniLink fade to="/contact"><button className="main-btn1">أطلب الأن</button></AniLink></li>
                 <li><AniLink fade to="/work"><button className="main-btn2"> تصفح الأعمال</button></AniLink></li>
                 </ul>
-              
+              <h1>BY M.ADEL</h1>
               </div>
 
               </div>
@@ -151,19 +151,22 @@ export default class main extends Component {
             <footer>
               <div className="row">
                 <button className="footer-btn1">
-                  
+                <a href="https://www.facebook.com/khatabweb">
                     <FaFacebook/>
 
-                  
+                  </a>
                 </button>
                 <button className="footer-btn2">
-                  
-                    <FaLinkedin/>
+                  <a href="mailto:kw4s.com@gmail.com">
+                    <FaGoogle/>
 
-                  
+                  </a>
                 </button>
+               
                 <button className="footer-btn3">
-                  <MdPhoneIphone/>:01092773477
+                  <a href="tel:0548252956">
+                  <MdPhoneIphone/>: 0548252956
+                  </a>
                 </button>
               </div>
               <p>© 2020 Khatab Web and Application services , Inc. All rights reserved.</p>

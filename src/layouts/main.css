@@ -48,8 +48,7 @@
     font-size: 40px;
     margin-bottom: 10%;
     box-shadow: 3px 3px 6px rgba(58, 55, 55, 0.507);
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+    border-radius: 50px;
 
     
 }
@@ -113,7 +112,7 @@
     text-align: right;
     margin-top: -10vh;
     padding: 10% 1%;
-    padding-bottom: 25vh;
+    padding-bottom: 18vh;
    
     
 }
@@ -135,13 +134,17 @@
     line-height: 150%;
     
 }
+.main-text3 h1 {
+    margin-left: 20%;
+    color: transparent;
+}
 
 
 footer {
     background:url("../images/footer-bg003.jpg") ;
     
     text-align: center;
-    height: 8%;
+    height: 7.5%;
     width: 100%;
     position: fixed;
     bottom: 0;
@@ -149,6 +152,7 @@ footer {
     border-top-right-radius: 50px ;
     border-top-left-radius: 50px ;
     z-index: 70;
+    line-height: 20px;
     
   
 }
@@ -158,7 +162,7 @@ footer p {
     font-size: 9px;
     margin-left: -10%;
     color: #06c28a;
-    margin-top: -7px;
+    
     
     
 }
@@ -166,7 +170,7 @@ footer button {
     background: transparent;
     border: none;
     margin-right: 5vw;
-    margin-top: 5px;
+    margin-top: 8px;
     
     
 }
@@ -175,16 +179,16 @@ footer button:focus {
     outline: none;
 }
 
-.footer-btn1 {
+.footer-btn1 a{
     color: #1877f2;
     margin-left: 22vw;
     font-size: 20px;
 }
-.footer-btn2 {
-    color:  #007bb5;
+.footer-btn2 a{
+    color:  #ea4335;
     font-size: 20px;
 }
-.footer-btn3 {
+.footer-btn3 a{
     color:#06c28a;
     font-size: 20px;
     font-weight: lighter;

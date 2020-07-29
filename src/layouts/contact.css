@@ -2,7 +2,7 @@
     padding: 0%;
     right: 0%;
     width: 80%;
-    height: 99%;
+    height: 100%;
     overflow-y: scroll;
     text-align: right;
     z-index: 3;
@@ -22,7 +22,7 @@
     
 }
 form {
-    margin-top: 5%;
+    margin-top: 2%;
     margin-right: 15%;
     text-align: right;
     
@@ -31,11 +31,11 @@ form label {
     margin-top: calc(0.8vh + 0.5em);
     margin-bottom: calc(0.3em + 0.3vh);
     display: block;
-    font-size: calc(0.5em + 0.7vw);
+    font-size: calc(0.4em + 0.7vw);
 }
 form input[type=text], [type=email] {
     padding: 0.1em 0.5em;
-    height: calc(4vh + 0.5em);
+    height: calc(3vh + 0.5em);
     width: calc(15vh + 12em + 20px);
     text-align: right;
     font-size: calc(0.3em + 0.5vw + 5px);
@@ -46,7 +46,7 @@ form input[type=text], [type=email] {
     background-color: transparent;
 }
 .form-textarea {
-    height: calc(8vh + 1.5em);
+    height: calc(7vh + 1.5em);
     width: calc(15vh + 12em + 20px);
     padding: 0.5vh 1vh;
     text-align: right;
@@ -61,7 +61,8 @@ form input[type=text], [type=email] {
 
 form input[type=submit] {
     
-    margin-top: -6%;
+    margin-top: 2%;
+    margin-bottom: 5%;
     height: calc(1vh + 1.5em + 5px);
     width: calc(7vh + 5em);
     display: block;
@@ -90,8 +91,41 @@ form input[type=submit] {
     font-size: calc(0.5em + 0.8vw + 2px);
   }
 
+  .phone-box {
+      width: 20%;
+      padding: 10px;
+      font-size: calc(0.4em + 0.7vw);
+      margin-left: 65%;
+      text-align: left;
+      line-height: 20px;
+      border: 1px solid rgb(177, 172, 172);
+      border-radius: 15px;
+      box-shadow:0.2em 0.2em 0.3em rgba(3, 3, 0.3, 0.29) ;
+  }
+  .phone-box button {
+      background: transparent;
+      border: none;
+      margin-top: 8px;
+  }
+
+  .phone-box a {
+      text-decoration: none;
+      color: inherit;
+      color: rgb(29, 124, 100);
+  }
+  .phone-box a:hover {
+      color: rgb(29, 202, 159);
+  }
+  
+  
 
   /************** MOBILE VIEW *****************/
+
+  @media  (orientation: landscape) {
+      .contact-bg-m {
+          display: none;
+      }
+  }
 
   @media  (orientation: portrait), (max-width: 500px) {
 
@@ -99,18 +133,21 @@ form input[type=submit] {
         background-color: rgba(25, 175, 142, 0.144);
         width: 250px;
         height: 35px;
+        font-size: 18px;
     }
 
 .form-textarea {
     background-color: rgba(25, 175, 142, 0.144);
     width: 250px;
     height: 70px;
+    font-size: 15px;
 }
 form input[type=submit] {
     margin-top: 2em;
     height: 5vh;
     width: 30vw;
     font-size: calc(15% + 15px) ;
+    margin-bottom: 0;
 }
 
 form label {
@@ -121,6 +158,21 @@ form label {
     margin-top: 16%;
     
     font-size: 35px;
+}
+.phone-box {
+    background-color: rgba(25, 175, 142, 0.144);
+    width: 70%;
+    padding: 10px;
+    font-size: 18px;
+    margin-left: 20%;
+    text-align: left;
+    line-height: 20px;
+    border: 1px solid rgb(201, 199, 199);
+    border-radius: 15px;
+    box-shadow:0.2em 0.2em 0.3em rgba(3, 3, 0.3, 0.29) ;
+}
+.contact.bg {
+    display: none;
 }
 
   }

@@ -204,7 +204,7 @@ export default class serviceC extends Component {
                     >
                       {" "}
                       تصميم و برمجة
-                      <br /> جميع المواقع
+                      <br /> المواقع
                       <br /> الإلكترونية
                     </button>
                   </div>

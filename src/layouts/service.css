@@ -520,13 +520,14 @@
   color: rgb(224, 216, 216);
   height: 6vh;
   width: 15vw;
-  margin-top: 17vh;
+  margin-top: 15vh;
   margin-left: 17vw;
   margin-right: 2vw;
   font-weight: bold;
   font-size: calc(25px + 50%);
   border: none;
   transition: ease 0.3s all;
+  color: black;
 }
 
 .more-btn:focus {
@@ -534,7 +535,7 @@
 }
 .more-btn:hover {
   font-size: calc(30px + 55%);
-  color: white;
+  color: rgb(25, 133, 91);
   animation: rotation 2s infinite linear;
 }
 .more-btn:active {
@@ -691,7 +692,7 @@
  
   height: 6vh;
   width: 28vw;
-  margin-top: 9vh;
+  margin-top: 8vh;
   margin-left: 10vw;
   margin-right: -17vw;
   color: #06c28a;
@@ -759,6 +760,7 @@ info4-container {
 
 .padding-filler {
   height: 40vh;
+  
   
 }
 

@@ -115,7 +115,7 @@
 
 
 .whatsapp-btn:active {
-    width: 8.3vw;
+    width: 80px;
     transition: ease 0.2s all;
 }
 
@@ -131,7 +131,7 @@
     position: fixed;
     width: 85px;
     height: auto;
-    right:1%;
+    right:0%;
     bottom:90px;
     transition: all 1s ease;
     z-index: 999;

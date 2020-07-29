@@ -418,6 +418,11 @@ export default class serviceC extends Component {
                     أي برنامج، أو أي ملف مهما كان، لأن شركة خطاب ويب لديها فريق
                    عمل ودعم فني متواصل 24-7
                   </p>
+                  <div className="btn-estdafa">
+                    <AniLink fade to="/contact">
+                     <button > اطلب الان</button>
+                    </AniLink>
+                    </div>
                   <div className="padding-filler"></div>
                 </div>
                 

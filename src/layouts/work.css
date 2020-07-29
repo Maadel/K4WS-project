@@ -324,7 +324,7 @@
     color: rgb(29, 190, 169);
     box-shadow:0.2em 0.2em 0.3em rgba(3, 3, 0.3, 0.29) ;
     
-    border: none;
+    border: 1px solid gray;
     border-radius: 50px;
     cursor: pointer;
   }

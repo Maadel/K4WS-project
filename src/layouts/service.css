@@ -544,7 +544,48 @@
 
 }
 
-
+.btn-estdafa {
+  margin-right: 20%;
+  margin-top: -7%;
+  
+  
+  
+}
+.btn-estdafa button {
+  height: calc(1vh + 1.5em + 5px);
+  width: calc(7vh + 5em);
+  
+  
+  padding: 3px 10px 3px 5px;
+  position: relative;
+  font-size: calc(0.5em + 0.8vw + 3px);
+  background-color: rgb(37, 175, 145);
+  
+  color: rgb(209, 209, 209);
+  box-shadow:0.2em 0.2em 0.3em rgba(3, 3, 0.3, 0.29) ;
+  
+  border: 1px solid gray;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.btn-estdafa button:hover {
+  background-color: rgba(31, 218, 171, 0.507);
+  color: white;
+  transition: ease 0.3s all;
+  
+}
+.btn-estdafa button:active {
+  background-color: rgb(36, 204, 162);
+  color: rgb(218, 211, 211);
+  box-shadow:inset 0.14em 0.14em 0.24em rgba(3, 3, 0.3, 0.29) ;
+  transition: ease 0.2s all;
+  margin-left: 59%;
+  font-size: calc(0.5em + 0.8vw + 2px);
+}
+.btn-estdafa button:focus {
+    outline: none;
+    outline-style: none;
+}
 
 
 /************** MOBILE VIEW *****************/
@@ -771,5 +812,19 @@ info4-container {
 .service-close-btn button {
   margin-left: 90%;
 }
+
+.btn-estdafa {
+  margin-right: 35%;
+ margin-top: 10%;
+ font-size: 18px;
+ 
+  
+}
+
+.btn-estdafa button {
+  height: 12%;
+  width: 25vw;
+}
+
 
 }

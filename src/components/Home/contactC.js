@@ -73,18 +73,21 @@ export default class contactC extends Component {
                   <h1>اتصل بنا</h1>
                     <div className="phone-box">
                       <button className="">
-                      <MdPhoneIphone />:
+                      
                       <a href="tel:0548252956">0548252956</a>
+                      : <MdPhoneIphone />
                       </button>
 
                       <button className="">
-                      <FaGoogle style={{color: "#ea4335"}}/> : 
+                       
                         <a href="mailto:kw4s.com@gmail.com">kw4s.com@gmail.com</a>
+                        : <FaGoogle style={{color: "#ea4335"}}/>
                       </button>
                     
                       <button className="">
-                      <FaFacebook style={{color: "#1877f2"}}/> :
+                      
                       <a href="https://www.facebook.com/khatabweb">facebook/khatabweb</a>
+                      : <FaFacebook style={{color: "#1877f2"}}/>
                       </button>
                     </div>
 

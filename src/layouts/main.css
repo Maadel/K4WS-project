@@ -14,12 +14,14 @@
 
 
 
+
 .main-text {
     
     border-top: 2px solid rgb(95, 109, 104);
     margin-top: -1.5vh;
     background: url("../images/nav01.jpg");
-    
+    overflow: hidden;
+    overflow-y: scroll;
     
     width: 100%;
 
@@ -108,7 +110,7 @@
 
 .main-text3 {
     background: url("../images/nav01.jpg");
-    background-position: center;
+    
     text-align: right;
     margin-top: -10vh;
     padding: 10% 1%;
@@ -318,11 +320,7 @@ footer button:focus {
         height: 15px;
     }
 
-    .main-box {
-        
-        overflow: hidden;
-        overflow-y: scroll;
-    }
+ 
 
 
 }

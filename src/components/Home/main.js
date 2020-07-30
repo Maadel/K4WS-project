@@ -102,6 +102,7 @@ export default class main extends Component {
                 </div>
                 
               </Slider>
+              
             </div>
             <div className="main-text">
               <div className="main-text1">

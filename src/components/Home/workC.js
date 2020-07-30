@@ -124,7 +124,7 @@ export default class aboutC extends Component {
               <img src={klogo} alt="Logo"/>
             </Link>
             </div>
-            <div className="toggle-btn fixed-top">
+            <div className="toggle-btn">
             <button onClick={this.mapHandler}>
               <FaMapMarkerAlt />
               </button>
